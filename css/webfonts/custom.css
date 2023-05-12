@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'MADEOkineSans';
+  src: url('made-okine-sans-light.woff2') format('woff2'),
+       url('made-okine-sans-light.woff') format('woff'),
+       url('made-okine-sans-light.svg#youworkforthem') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MADEOkineSans';
+  src: url('made-okine-sans-regular.woff2') format('woff2'),
+       url('made-okine-sans-regular.woff') format('woff'),
+       url('made-okine-sans-regular.svg#youworkforthem') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MADEOkineSans';
+  src: url('made-okine-sans-medium.woff2') format('woff2'),
+       url('made-okine-sans-medium.woff') format('woff'),
+       url('made-okine-sans-medium.svg#youworkforthem') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    src: local('Noto Sans CJK JP'),
+         local('NotoSansCJKjp-Regular'),
+         local('NotoSansJP-Regular'),
+         url('NotoSansCJKjp-Regular.woff2') format('woff2'),
+         url('NotoSansCJKjp-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    src: local('NotoSansCJKjp-Medium'),
+         local('NotoSansJP-Medium'),
+         url('NotoSansCJKjp-Medium.woff2') format('woff2'),
+         url('NotoSansCJKjp-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    src: local('NotoSansCJKjp-Bold'),
+         local('NotoSansJP-Bold'),
+         url('NotoSansCJKjp-Bold.woff2') format('woff2'),
+         url('NotoSansCJKjp-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;     
+}
