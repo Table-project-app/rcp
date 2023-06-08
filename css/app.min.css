@@ -4482,6 +4482,28 @@ body.dark .button-stroke:hover svg {
   fill: #1A1D1F;
 }
 
+.button-red {
+  box-shadow: 0 0 0 2px var(--recopo-pink) inset;
+  background: var(--recopo-pink);
+  color:#FCFCFC;
+}
+
+.button-red svg {
+  fill: #FCFCFC;
+}
+
+.button-red:hover,
+.button-red.active {
+  box-shadow: 0 0 0 2px var(--recopo-pink) inset;
+  background: #ef406c;
+  color: #FCFCFC;
+}
+
+.button-red:hover svg,
+.button-red.active svg {
+  fill: #FCFCFC;
+}
+
 .button-small {
   height: 40px;
   padding: 0 16px;
@@ -8922,7 +8944,7 @@ body.dark .refund__content strong {
   display: flex;
   align-items: center;
   min-width: 320px;
-  padding: 20px 10px;
+  padding: 0px 0px;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;

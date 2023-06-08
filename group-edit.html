@@ -645,12 +645,45 @@
       </div>
       <div class="panel">
         <div class="panel__btns">
-          <button class="button-stroke-red panel__button"><span>グループを削除</span>
+          <button class="button-stroke-red panel__button" data-popup=".js-popup-warning"><span>グループを削除</span>
             <svg class="icon icon-trash">
               <use xlink:href="#icon-trash"></use>
             </svg>
           </button>
-          <button class="button panel__button">保存</button>
+          <button class="button panel__button" data-popup=".js-popup-success">保存</button>
+        </div>
+      </div>
+      <div class="popup popup_success js-popup js-popup-success">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__wrap js-popup-wrap">
+          <div class="success">
+            <div class="success__info">編集内容を保存･反映します</div>
+            <div class="success__text">保存した編集内容は､お客様画面に即時反映されます
+            </div>
+            <button class="button-stroke description__button mr-8">キャンセル</button>
+            <button class="button success__button js-popup-close">保存･反映する</button>
+          </div>
+          <button class="popup__close js-popup-close">
+            <svg class="icon icon-close">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="popup popup_success js-popup js-popup-warning">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__wrap js-popup-wrap">
+          <div class="success">
+            <div class="success__info">グループを削除します</div>
+            <div class="success__text">削除した内容は､お客様画面に即時反映されます</div>
+            <button class="button-stroke description__button mr-8">キャンセル</button>
+            <button class="button button-red js-popup-close">削除する</button>
+          </div>
+          <button class="popup__close js-popup-close">
+            <svg class="icon icon-close">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </div>

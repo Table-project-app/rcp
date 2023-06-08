@@ -272,8 +272,7 @@ function getScrollBarWidth() {
 function showPopup(el) {
   var body = $('body');
   body.addClass('no-scroll');
-  body.css('padding-right', getScrollBarWidth());
-
+  
   if (el) {
     el.addClass('animation');
     setTimeout(function () {
