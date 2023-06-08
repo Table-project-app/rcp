@@ -30,6 +30,9 @@
 </head>
 
 <body>
+  <!--begin::loader-->
+  <div id="page_loader"></div>
+  <!--end::Loader-->
   <script>
     console.log(localStorage.getItem('darkMode'));
     if (localStorage.getItem('darkMode') === "on") {
@@ -201,6 +204,7 @@
     <script src="js/charts.js"></script>
     <script src="js/demo.js"></script>
     <script src="js/app.js"></script>
+  <script src="js/loading.js"></script>
     <script>
       function viewChange() {
         if (document.getElementById('visit')) {

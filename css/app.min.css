@@ -23541,3 +23541,33 @@ body.dark .score_text_s {
 p {
    margin: 0.5rem 0px;
 }
+
+
+#page_loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FCFCFC;
+  transition: opacity 0.3s;
+  z-index: 9999;
+}
+
+#page_loader.loaded {
+    animation: fadeOut 3s forwards;
+}
+
+#lottie-loader {
+  width: 240px;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeOut 3s forwards;
+}

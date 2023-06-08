@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>牛鍋 吉田屋 東京都の店舗 - 店舗グループ一覧 - Recopoダッシュボード</title>
+  <title>ホーム - Recopoダッシュボード</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
@@ -17,6 +17,7 @@
   <link rel="stylesheet" media="all" href="css/webfonts/custom.css">
   <link rel="stylesheet" media="all" href="css/app.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-noto.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js"></script>
   <script>
     var viewportmeta = document.querySelector('meta[name="viewport"]');
     if (viewportmeta) {
@@ -32,17 +33,10 @@
 
 <body>
   <!--begin::loader-->
-  <div id="page_loader"></div>
+  <div id="page_loader">
+  <div id="lottie-loader"></div>
+  </div>
   <!--end::Loader-->
-  <script>
-    console.log(localStorage.getItem('darkMode'));
-    if (localStorage.getItem('darkMode') === "on") {
-      document.body.classList.add("dark");
-      document.addEventListener("DOMContentLoaded", function() {
-        document.querySelector('.js-theme input').checked = true;
-      });
-    }
-  </script>
   <!-- page-->
   <div class="page">
     <!-- header-->
@@ -322,7 +316,7 @@
       </button>
       <a class="sidebar__logo" href="index.html"><img class="some-icon" src="img/logo-dark.svg" alt="Recopo"><img class="some-icon-dark" src="img/logo-light.svg" alt="Recopo"></a>
       <div class="sidebar__menu">
-        <a class="sidebar__item" href="index.html">
+        <a class="sidebar__item active" href="index.html">
           <svg class="icon icon-home">
             <use xlink:href="#icon-home"></use>
           </svg>
@@ -348,19 +342,19 @@
         </a>
         <a class="sidebar__item" href="brands.html">
           <svg class="icon icon-flag">
-            <use xlink:href="#icon-flag"></use>
+          <use xlink:href="#icon-flag"></use>
           </svg>
           ブランド一覧
         </a>
-        <a class="sidebar__item active" href="groups.html">
+        <a class="sidebar__item" href="groups.html">
           <svg class="icon icon-category">
-            <use xlink:href="#icon-category"></use>
+          <use xlink:href="#icon-category"></use>
           </svg>
           店舗グループ一覧
         </a>
         <a class="sidebar__item" href="stores.html">
           <svg class="icon icon-store">
-            <use xlink:href="#icon-store"></use>
+          <use xlink:href="#icon-store"></use>
           </svg>
           店舗一覧
         </a>
@@ -501,30 +495,12 @@
     <!-- inner-->
     <div class="page__inner">
       <div class="page__container">
-        <div class="page__head">
-          <div class="page__title h3">
-            <svg class="icon icon-category">
-              <use xlink:href="#icon-category"></use>
-            </svg>
-            <div class="h3">牛鍋 吉田家 <small class="ml-16">東京都</small></div>
-            <div class="store__info">
-              <a href="groups.html">店舗グループ一覧</a>
-            </div>
-            <div class="store__subinfo">
-              <svg class="icon icon-chevron-forward">
-                <use xlink:href="#icon-chevron-forward"></use>
-              </svg>牛鍋 吉田屋 - 東京都
-            </div>
-          </div>
-          <div class="page__action mobile-hide">
-            <a class="button-small card__button button-stroke" href="group-edit.html">
-              <svg class="icon icon-edit">
-                <use xlink:href="#icon-edit"></use>
-              </svg>
-              <span>グループ編集</span>
-            </a>
-          </div>
-        </div>
+        <div class="page__title h3">
+          <svg class="icon icon-home">
+            <use xlink:href="#icon-home"></use>
+          </svg>
+          <div class="h3">吉田ダイニンググループ</div>
+        </div>  
         <div class="card">
           <div class="card__head">
             <div class="title-orange card__title">サマリー</div>
@@ -668,17 +644,18 @@
             <div class="overview__container">
               <div class="overview__item js-tabs-item" style="display: block;">
                 <div class="overview__chart">
-                  <div id="score-chart-compare"></div>
+                  <div id="score-chart"></div>
                 </div>
               </div>
               <div class="overview__item js-tabs-item" style="display: block;">
                 <div class="overview__chart">
-                  <div id="nps-chart-compare"></div>
+                  <div id="nps-chart"></div>
                 </div>
               </div>
               <div class="overview__item js-tabs-item">
                 <div class="overview__chart">
-                  <div id="answer-chart-compare"></div>
+                  <div id="answer-chart"></div>
+                  <div id="product-views-small"></div>
                 </div>
               </div>
             </div>
@@ -699,29 +676,6 @@
           </div>
           <div class="card__chart card__chart_evaluation-analysis">
             <div id="evaluation-analysis"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__head">
-            <div class="title-yellow card__title">評価項目別スコア</div>
-            <div class="card__select">
-              <select class="select select_small">
-                <option>直近7日</option>
-                <option>直近30日</option>
-                <option selected>直近3ヶ月</option>
-                <option>直近1年</option>
-                <option>全期間</option>
-              </select>
-            </div>
-            <div class="card__select ml-8 mobile-hide">
-              <select class="select select_small">
-                <option selected>比較:ブランド平均</option>
-                <option>比較:全店舗平均</option>
-              </select>
-            </div>
-          </div>
-          <div class="card__chart card__chart_evaluation-score">
-            <div id="evaluation-score-group"></div>
           </div>
         </div>
         <div class="card">
@@ -774,7 +728,7 @@
               <div class="demography__item_6">
                 <div class="demography__subtitle_6">居住エリア</div>
                 <div class="card__chart card__chart_demography">
-                  <div id="address-city-chart"></div>
+                  <div id="address-chart"></div>
                 </div>
               </div>
             </div>
@@ -783,7 +737,7 @@
         <div class="card">
           <div class="card__head">
             <div class="title-orange card__title">直近のアンケート回答</div>
-            <a class="button-stroke button-small card__button" href="group-reviews.html">
+            <a class="button-stroke button-small card__button" href="reviews.html">
               <span>回答一覧</span>
               <svg class="icon icon-arrow-right">
                 <use xlink:href="#icon-arrow-right"></use>
@@ -795,12 +749,12 @@
               <div class="qs__row">
                 <div class="qs__col">回答内容</div>
                 <div class="qs__col">店舗</div>
-                <div class="qs__col text-end">回答日時</div>
+                <div class="qs__col text-gray text-end">回答日時</div>
               </div>
               <div class="qs__row" data-popup=".js-popup-qs">
                 <div class="qs__col">
                   <div class="qs__item">
-                    <div class="score__number score__middle">
+                    <div class="score__number score__high">
                       8
                     </div>
                     <div class="qs__details">
@@ -905,6 +859,74 @@
               <div class="qs__row" data-popup=".js-popup-qs">
                 <div class="qs__col">
                   <div class="qs__item">
+                    <div class="score__number score__low">
+                      4
+                    </div>
+                    <div class="qs__details">
+                      <div class="qs__comment">トイレの洗面台に汚物のようなものが放置されており、気分が悪くなりました。定期的にチェックしてほしいです。床に落ちているゴミも少し気になりました。料理は普通に美味しかったです。</div>
+                      <div class="balance background plus">
+                        <svg class="icon icon-good">
+                          <use xlink:href="#icon-good"></use>
+                        </svg>
+                        料理#味
+                      </div>
+                      <div class="balance background minus">
+                        <svg class="icon icon-bad">
+                          <use xlink:href="#icon-bad"></use>
+                        </svg>
+                        雰囲気#清潔感
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="qs__col">
+                  <div class="qs__user">
+                    <div class="qs__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉野家"></div>
+                    牛鍋 吉田屋<br>北新地店
+                  </div>
+                </div>
+                <div class="qs__col text-gray text-end">2023/2/13 17:51</div>
+              </div>
+              <div class="qs__row" data-popup=".js-popup-qs">
+                <div class="qs__col">
+                  <div class="qs__item">
+                    <div class="score__number score__low">
+                      3
+                    </div>
+                    <div class="qs__details">
+                      <div class="qs__comment">料理が運ばれてきたのが、注文から30分後くらいで、待ちくたびれてしまいました。料理を持ってきた時も、お待たせしましたの一言もなし。ちょっと残念です。空いたお皿を下げてくれるなどもなく、不快でした。そう考えると、少し高いのかな。。</div>
+                      <div class="balance background minus">
+                        <svg class="icon icon-bad">
+                          <use xlink:href="#icon-bad"></use>
+                        </svg>
+                        価格#コストパフォーマンス
+                      </div>
+                      <div class="balance background minus">
+                        <svg class="icon icon-bad">
+                          <use xlink:href="#icon-bad"></use>
+                        </svg>
+                        サービス#接客
+                      </div>
+                      <div class="balance background minus">
+                        <svg class="icon icon-bad">
+                          <use xlink:href="#icon-bad"></use>
+                        </svg>
+                        サービス#料理の提供時間
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="qs__col">
+                  <div class="qs__user">
+                    <div class="qs__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                    万吉スープカレー<br>京都駅前店
+                  </div>
+                </div>
+                <div class="qs__col text-gray text-end">2023/2/13 17:51</div>
+              </div>
+              <div class="qs__row" data-popup=".js-popup-qs">
+                <div class="qs__col">
+                  <div class="qs__item">
                     <div class="score__number score__high">
                       10
                     </div>
@@ -936,6 +958,74 @@
                   <div class="qs__user">
                     <div class="qs__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉野家"></div>
                     牛鍋 吉田屋<br>池袋店
+                  </div>
+                </div>
+                <div class="qs__col text-gray text-end">2023/2/13 17:51</div>
+              </div>
+              <div class="qs__row" data-popup=".js-popup-qs">
+                <div class="qs__col">
+                  <div class="qs__item">
+                    <div class="score__number score__high">
+                      9
+                    </div>
+                    <div class="qs__details">
+                      <div class="qs__comment">量が多いのが良かったです！駐車場も広くて止めやすかった！</div>
+                      <div class="balance background plus">
+                        <svg class="icon icon-good">
+                          <use xlink:href="#icon-good"></use>
+                        </svg>
+                        サービス#駐車場の利便性
+                      </div>
+                      <div class="balance background plus">
+                        <svg class="icon icon-good">
+                          <use xlink:href="#icon-good"></use>
+                        </svg>
+                        料理#分量
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="qs__col">
+                  <div class="qs__user">
+                    <div class="qs__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                    万吉スープカレー<br>梅田店
+                  </div>
+                </div>
+                <div class="qs__col text-gray text-end">2023/2/13 17:51</div>
+              </div>
+              <div class="qs__row" data-popup=".js-popup-qs">
+                <div class="qs__col">
+                  <div class="qs__item">
+                    <div class="score__number score__high">
+                      9
+                    </div>
+                    <div class="qs__details">
+                      <div class="qs__comment">ランチですごく混んでいてびっくりしたけど、満足できて待った甲斐があった。子供もピザが美味しいと言っていた。今度ママ友と来たいと思います。</div>
+                      <div class="balance background plus">
+                        <svg class="icon icon-good">
+                          <use xlink:href="#icon-good"></use>
+                        </svg>
+                        料理#おすすめできるか
+                      </div>
+                      <div class="balance background plus">
+                        <svg class="icon icon-good">
+                          <use xlink:href="#icon-good"></use>
+                        </svg>
+                        料理#味
+                      </div>
+                      <div class="balance background minus">
+                        <svg class="icon icon-bad">
+                          <use xlink:href="#icon-bad"></use>
+                        </svg>
+                        サービス#入店までの待ち時間
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="qs__col">
+                  <div class="qs__user">
+                    <div class="qs__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉野家"></div>
+                    牛鍋 吉田屋<br>北二条店
                   </div>
                 </div>
                 <div class="qs__col text-gray text-end">2023/2/13 17:51</div>
@@ -978,247 +1068,6 @@
               <div class="loader"></div>
               <span>もっと見る</span>
             </button>
-          </div>
-        </div>
-        <div class="refunds customer card">
-          <div class="card__head">
-            <div class="title-orange card__title">グループ内店舗</div>
-            <div class="card__select mr-8 ml-auto">
-              <select class="select select_small">
-                <option selected>直近7日</option>
-                <option>直近30日</option>
-                <option>直近3ヶ月</option>
-                <option>直近1年</option>
-                <option>全期間</option>
-              </select>
-            </div>
-            <div class="card__select">
-              <select class="select select_small">
-                <option selected>総合スコア ↓</option>
-                <option>総合スコア ↑</option>
-                <option>NPS ↓</option>
-                <option>NPS ↑</option>
-                <option>回答数 ↓</option>
-                <option>回答数 ↑</option>
-              </select>
-            </div>
-          </div>
-        
-          <div class="table-responsive">
-            <div class="customer__inner">
-              <div class="customer__container">
-                <div class="customer__table">
-                  <div class="customer__row">
-                    <div class="customer__col" style="text-align:left !important">店舗名</div>
-                    <div class="customer__col">回答数</div>
-                    <div class="customer__col">NPS</div>
-                    <div class="customer__col">総合スコア</div>
-                    <div class="customer__col score_header">雰囲気#<br>雰囲気･装飾</div>
-                    <div class="customer__col score_header">雰囲気#<br>音楽･ノイズ</div>
-                    <div class="customer__col score_header">雰囲気#<br>清潔感</div>
-                    <div class="customer__col score_header">雰囲気#<br>店内･席</div>
-                    <div class="customer__col score_header">料理#<br>見た目</div>
-                    <div class="customer__col score_header">料理#<br>分量</div>
-                    <div class="customer__col score_header">料理#<br>おすすめできるか</div>
-                    <div class="customer__col score_header">料理#<br>味</div>
-                    <div class="customer__col score_header">立地#<br>都心･繁華街にあるか</div>
-                    <div class="customer__col score_header">立地#<br>見つけやすいか</div>
-                    <div class="customer__col score_header">立地#<br>アクセスの良さ</div>
-                    <div class="customer__col score_header">価格#<br>コストパフォーマンス</div>
-                    <div class="customer__col score_header">価格#<br>割引について</div>
-                    <div class="customer__col score_header">価格#<br>水準</div>
-                    <div class="customer__col score_header">サービス#<br>接客</div>
-                    <div class="customer__col score_header">サービス#<br>駐車場の利便性</div>
-                    <div class="customer__col score_header">サービス#<br>入店までの待ち時間</div>
-                    <div class="customer__col score_header">サービス#<br>料理の提供時間</div>
-                  </div>
-                  <a class="customer__row" href="store.html">
-                    <div class="customer__col">
-                      <div class="customer__item">
-                        <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                        <div class="customer__description text-left">
-                          <div class="customer__user">牛鍋 吉田屋 八丁堀店</div>
-                          <div class="customer__login">東京都の店舗</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="customer__col">16</div>
-                    <div class="customer__col">
-                      <div class="status-orange customer__purchase">8.2</div>
-                    </div>
-                    <div class="customer__col">
-                      <div class="status-yellow customer__purchase">78</div>
-                    </div>
-                    <div class="customer__col score_text_p">16</div>
-                    <div class="customer__col score_text_p">27</div>
-                    <div class="customer__col score_text_p">4</div>
-                    <div class="customer__col score_text_n">-8</div>
-                    <div class="customer__col score_text_p">5</div>
-                    <div class="customer__col score_text_p">17</div>
-                    <div class="customer__col score_text_n">-5</div>
-                    <div class="customer__col score_text_p">41</div>
-                    <div class="customer__col score_text_p">28</div>
-                    <div class="customer__col score_text_n">-2</div>
-                    <div class="customer__col score_text_p">15</div>
-                    <div class="customer__col score_text_p">3</div>
-                    <div class="customer__col score_text_p">29</div>
-                    <div class="customer__col score_text_p">18</div>
-                    <div class="customer__col score_text_p">27</div>
-                    <div class="customer__col score_text_n">-13</div>
-                    <div class="customer__col score_text_p">21</div>
-                    <div class="customer__col score_text_p">8</div>
-                  </a>
-      
-                  <a class="customer__row" href="store.html">
-                    <div class="customer__col">
-                      <div class="customer__item">
-                        <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                        <div class="customer__description text-left">
-                          <div class="customer__user">牛鍋 吉田屋 青山店</div>
-                          <div class="customer__login">東京都の店舗</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="customer__col">39</div>
-                    <div class="customer__col">
-                      <div class="status-orange customer__purchase">8.9</div>
-                    </div>
-                    <div class="customer__col">
-                      <div class="status-yellow customer__purchase">89</div>
-                    </div>
-                    <div class="customer__col score_text_p">8</div>
-                    <div class="customer__col score_text_p">31</div>
-                    <div class="customer__col score_text_n">-3</div>
-                    <div class="customer__col score_text_n">-8</div>
-                    <div class="customer__col score_text_p">5</div>
-                    <div class="customer__col score_text_p">17</div>
-                    <div class="customer__col score_text_n">-5</div>
-                    <div class="customer__col score_text_p">41</div>
-                    <div class="customer__col score_text_p">28</div>
-                    <div class="customer__col score_text_n">-2</div>
-                    <div class="customer__col score_text_p">15</div>
-                    <div class="customer__col score_text_p">3</div>
-                    <div class="customer__col score_text_p">29</div>
-                    <div class="customer__col score_text_p">18</div>
-                    <div class="customer__col score_text_p">27</div>
-                    <div class="customer__col score_text_n">-13</div>
-                    <div class="customer__col score_text_p">21</div>
-                    <div class="customer__col score_text_p">8</div>
-                  </a>
-                  <a class="customer__row" href="store.html">
-                    <div class="customer__col">
-                      <div class="customer__item">
-                        <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                        <div class="customer__description text-left">
-                          <div class="customer__user">牛鍋 吉田屋 池袋店</div>
-                          <div class="customer__login">東京都の店舗</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="customer__col">23</div>
-                    <div class="customer__col">
-                      <div class="status-orange customer__purchase">7.6</div>
-                    </div>
-                    <div class="customer__col">
-                      <div class="status-yellow customer__purchase">67</div>
-                    </div>
-                    <div class="customer__col score_text_p">29</div>
-                    <div class="customer__col score_text_n">-10</div>
-                    <div class="customer__col score_text_p">7</div>
-                    <div class="customer__col score_text_n">-2</div>
-                    <div class="customer__col score_text_p">5</div>
-                    <div class="customer__col score_text_p">17</div>
-                    <div class="customer__col score_text_n">-5</div>
-                    <div class="customer__col score_text_p">41</div>
-                    <div class="customer__col score_text_p">28</div>
-                    <div class="customer__col score_text_n">-2</div>
-                    <div class="customer__col score_text_p">15</div>
-                    <div class="customer__col score_text_p">3</div>
-                    <div class="customer__col score_text_p">29</div>
-                    <div class="customer__col score_text_p">18</div>
-                    <div class="customer__col score_text_p">27</div>
-                    <div class="customer__col score_text_n">-13</div>
-                    <div class="customer__col score_text_p">21</div>
-                    <div class="customer__col score_text_p">8</div>
-                  </a>
-                  
-                  <a class="customer__row" href="store.html">
-                    <div class="customer__col">
-                      <div class="customer__item">
-                        <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                        <div class="customer__description text-left">
-                          <div class="customer__user">牛鍋 吉田屋 丸の内店</div>
-                          <div class="customer__login">東京都の店舗</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="customer__col">29</div>
-                    <div class="customer__col">
-                      <div class="status-orange customer__purchase">6.9</div>
-                    </div>
-                    <div class="customer__col">
-                      <div class="status-yellow customer__purchase">91</div>
-                    </div>
-                    <div class="customer__col score_text_p">10</div>
-                    <div class="customer__col score_text_p">17</div>
-                    <div class="customer__col score_text_p">11</div>
-                    <div class="customer__col score_text_n">-8</div>
-                    <div class="customer__col score_text_p">5</div>
-                    <div class="customer__col score_text_p">17</div>
-                    <div class="customer__col score_text_n">-5</div>
-                    <div class="customer__col score_text_p">41</div>
-                    <div class="customer__col score_text_p">28</div>
-                    <div class="customer__col score_text_n">-2</div>
-                    <div class="customer__col score_text_p">15</div>
-                    <div class="customer__col score_text_p">3</div>
-                    <div class="customer__col score_text_p">29</div>
-                    <div class="customer__col score_text_p">18</div>
-                    <div class="customer__col score_text_p">27</div>
-                    <div class="customer__col score_text_n">-13</div>
-                    <div class="customer__col score_text_p">21</div>
-                    <div class="customer__col score_text_p">8</div>
-                  </a>
-                  
-                  <a class="customer__row" href="store.html">
-                    <div class="customer__col">
-                      <div class="customer__item">
-                        <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                        <div class="customer__description text-left">
-                          <div class="customer__user">牛鍋 吉田屋 代々木店</div>
-                          <div class="customer__login">東京都の店舗</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="customer__col">39</div>
-                    <div class="customer__col">
-                      <div class="status-orange customer__purchase">8.9</div>
-                    </div>
-                    <div class="customer__col">
-                      <div class="status-yellow customer__purchase">79</div>
-                    </div>
-                    <div class="customer__col score_text_p">8</div>
-                    <div class="customer__col score_text_p">31</div>
-                    <div class="customer__col score_text_n">-3</div>
-                    <div class="customer__col score_text_n">-8</div>
-                    <div class="customer__col score_text_p">5</div>
-                    <div class="customer__col score_text_p">17</div>
-                    <div class="customer__col score_text_n">-5</div>
-                    <div class="customer__col score_text_p">41</div>
-                    <div class="customer__col score_text_p">28</div>
-                    <div class="customer__col score_text_n">-2</div>
-                    <div class="customer__col score_text_p">15</div>
-                    <div class="customer__col score_text_p">3</div>
-                    <div class="customer__col score_text_p">29</div>
-                    <div class="customer__col score_text_p">18</div>
-                    <div class="customer__col score_text_p">27</div>
-                    <div class="customer__col score_text_n">-13</div>
-                    <div class="customer__col score_text_p">21</div>
-                    <div class="customer__col score_text_p">8</div>
-                  </a>
-      
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1623,8 +1472,14 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.91518 4.40958C5.94325 3.41902 4.37278 3.41902 3.40085 4.40958C2.42199 5.4072 2.42199 7.0298 3.40085 8.02742L7.52418 12.2298C7.78552 12.4961 8.21456 12.4961 8.4759 12.2298L12.5992 8.02742C13.5781 7.0298 13.5781 5.4072 12.5992 4.40958C11.6273 3.41902 10.0568 3.41902 9.08491 4.40958L8.4759 5.03026C8.35053 5.15803 8.17904 5.23002 8.00004 5.23002C7.82103 5.23002 7.64955 5.15803 7.52418 5.03026L6.91518 4.40958ZM7.86689 3.47577L8.00004 3.61147L8.13319 3.47577C9.62779 1.95252 12.0564 1.95252 13.551 3.47577C15.0386 4.99196 15.0386 7.44504 13.551 8.96124L9.42762 13.1636C8.64361 13.9626 7.35647 13.9626 6.57247 13.1636L2.44913 8.96124C0.961455 7.44504 0.961455 4.99196 2.44913 3.47577C3.94373 1.95252 6.37229 1.95252 7.86689 3.47577Z"/>
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-flag">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33333 1.99999C3.33333 1.63181 3.03486 1.33333 2.66667 1.33333C2.29848 1.33333 2 1.63181 2 1.99999V14C2 14.3682 2.29848 14.6667 2.66667 14.6667C3.03486 14.6667 3.33333 14.3682 3.33333 14V10H6.68422C7.11415 10 7.54127 10.0693 7.94913 10.2053L8.71753 10.4614C9.1254 10.5974 9.55252 10.6667 9.98244 10.6667H12C13.1046 10.6667 14 9.77123 14 8.66666V4.66666C14 3.56209 13.1046 2.66666 12 2.66666H9.98244C9.55252 2.66666 9.1254 2.59735 8.71753 2.46139L7.94913 2.20526C7.54127 2.06931 7.11415 1.99999 6.68422 1.99999H3.33333ZM3.33333 3.33333V8.66666H6.68422C7.25746 8.66666 7.82695 8.75908 8.37077 8.94035L9.13917 9.19648C9.41108 9.28712 9.69583 9.33333 9.98244 9.33333H12C12.3682 9.33333 12.6667 9.03485 12.6667 8.66666V4.66666C12.6667 4.29847 12.3682 3.99999 12 3.99999H9.98244C9.40921 3.99999 8.83972 3.90758 8.2959 3.72631L7.5275 3.47017C7.25559 3.37954 6.97084 3.33333 6.68422 3.33333H3.33333Z"/>
-      </symbol> 
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33333 1.99999C3.33333 1.63181 3.03486 1.33333 2.66667 1.33333C2.29848 1.33333 2 1.63181 2 1.99999V14C2 14.3682 2.29848 14.6667 2.66667 14.6667C3.03486 14.6667 3.33333 14.3682 3.33333 14V10H6.68422C7.11415 10 7.54127 10.0693 7.94913 10.2053L8.71753 10.4614C9.1254 10.5974 9.55252 10.6667 9.98244 10.6667H12C13.1046 10.6667 14 9.77123 14 8.66666V4.66666C14 3.56209 13.1046 2.66666 12 2.66666H9.98244C9.55252 2.66666 9.1254 2.59735 8.71753 2.46139L7.94913 2.20526C7.54127 2.06931 7.11415 1.99999 6.68422 1.99999H3.33333ZM3.33333 3.33333V8.66666H6.68422C7.25746 8.66666 7.82695 8.75908 8.37077 8.94035L9.13917 9.19648C9.41108 9.28712 9.69583 9.33333 9.98244 9.33333H12C12.3682 9.33333 12.6667 9.03485 12.6667 8.66666V4.66666C12.6667 4.29847 12.3682 3.99999 12 3.99999H9.98244C9.40921 3.99999 8.83972 3.90758 8.2959 3.72631L7.5275 3.47017C7.25559 3.37954 6.97084 3.33333 6.68422 3.33333H3.33333Z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-layers">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68343 3.45791C8.24191 3.29736 7.75797 3.29736 7.31646 3.45791L2.61739 5.16666L7.31646 6.87542C7.75797 7.03597 8.24191 7.03597 8.68343 6.87542L13.3825 5.16666L8.68343 3.45791ZM6.8608 2.20485C7.59666 1.93727 8.40323 1.93727 9.13909 2.20485L13.8382 3.91361C15.0084 4.33915 15.0084 5.99418 13.8382 6.41972L9.13909 8.12847C8.40323 8.39606 7.59666 8.39606 6.8608 8.12847L2.16173 6.41972C0.991495 5.99418 0.991503 4.33914 2.16173 3.91361L6.8608 2.20485Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 8.26332C1.49518 7.9164 1.8764 7.73517 2.22332 7.85851L7.5533 9.75362C7.84223 9.85635 8.15773 9.85635 8.44666 9.75362L13.7766 7.85851C14.1236 7.73517 14.5048 7.9164 14.6281 8.26332C14.7515 8.61023 14.5702 8.99145 14.2233 9.1148L8.89334 11.0099C8.31548 11.2154 7.68447 11.2154 7.10662 11.0099L1.77664 9.1148C1.42972 8.99145 1.24849 8.61023 1.37184 8.26332Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 11.0967C1.49518 10.7497 1.8764 10.5685 2.22332 10.6919L7.5533 12.587C7.84223 12.6897 8.15773 12.6897 8.44666 12.587L13.7766 10.6919C14.1236 10.5685 14.5048 10.7497 14.6281 11.0967C14.7515 11.4436 14.5702 11.8248 14.2233 11.9481L8.89334 13.8432C8.31548 14.0487 7.68447 14.0487 7.10662 13.8432L1.77664 11.9481C1.42972 11.8248 1.24849 11.4436 1.37184 11.0967Z" />
+      </symbol>
+
     </svg>
   </div>
 </body>
