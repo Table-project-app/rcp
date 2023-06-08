@@ -9077,6 +9077,10 @@ body.dark .popup_product .popup__overlay {
   max-width: 560px;
 }
 
+.popup_loading:not(.popup_product) .popup__wrap {
+  max-width: 300px;
+}
+
 .popup_refunds:not(.popup_product) .popup__wrap {
   max-width: 896px;
 }
@@ -22413,6 +22417,18 @@ body.dark .balance__item {
   font-size: 48px;
 }
 
+.white__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--recopo-white);
+  font-size: 48px;
+}
+
 .success__info {
   margin-bottom: 8px;
   font-size: 20px;
@@ -23513,4 +23529,14 @@ body.dark .score_text_s {
 
 p {
    margin: 0.5rem 0px;
+}
+
+#lottie{
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    margin: 0 auto;
+    opacity: 1;
 }
