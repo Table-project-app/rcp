@@ -662,7 +662,7 @@
             <div class="success__text">保存した編集内容は､お客様画面に即時反映されます
             </div>
             <button class="button-stroke description__button mr-8 js-popup-close">キャンセル</button>
-            <button class="button success__button js-popup-close"  data-popup=".js-popup-loader">保存･反映する</button>
+            <button class="button success__button js-popup-close" data-popup=".js-popup-loader-save">保存･反映する</button>
           </div>
           <button class="popup__close js-popup-close">
             <svg class="icon icon-close">
@@ -678,7 +678,7 @@
             <div class="success__info">グループを削除します</div>
             <div class="success__text">削除した内容は､お客様画面に即時反映されます</div>
             <button class="button-stroke description__button mr-8 js-popup-close">キャンセル</button>
-            <button class="button button-red">削除する</button>
+            <button class="button button-red js-popup-close" data-popup=".js-popup-loader-delete">削除する</button>
           </div>
           <button class="popup__close js-popup-close">
             <svg class="icon icon-close">
@@ -687,15 +687,21 @@
           </button>
         </div>
       </div>
-      <div class="popup popup_loading js-popup js-popup-loader">
+      <div class="popup popup_loading js-popup js-popup-loader-save">
         <div class="popup__overlay js-popup-overlay"></div>
         <div class="popup__wrap js-popup-wrap">
-          <div class="success">
-            <div class="white__icon">
-              <div id="loader"></div>
-              <script src="js/loader.js" type="text/javascript"></script>
-            </div>
-            <div class="success__text mb-0">保存中...</div>
+          <div class="loading">
+            <div id="loader_save"></div>
+            <div class="success__text mb-0">保存処理中...</div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup_loading js-popup js-popup-loader-delete">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__wrap js-popup-wrap">
+          <div class="loading">
+            <div id="loader_delete"></div>
+            <div class="success__text mb-0">削除処理中...</div>
           </div>
         </div>
       </div>
@@ -738,6 +744,22 @@
        multiple: true,
        placeholder: "グループに設定する店舗を選択してください",
        allowClear: true,
+    });
+    // Loader Saving
+    var animation = lottie.loadAnimation({
+      container: document.getElementById('loader_save'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: "json/loader.json"
+    });
+    // Loader Deleting
+    var animation = lottie.loadAnimation({
+      container: document.getElementById('loader_delete'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: "json/loader.json"
     });
   </script>
   <!-- svg sprite-->

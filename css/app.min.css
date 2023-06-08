@@ -22394,6 +22394,17 @@ body.dark .balance__item {
   }
 }
 
+.loading {
+  padding: 12px 0 24px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .loading {
+    padding: 16px 0 16px;
+  }
+}
+
 .success {
   padding: 60px 0 24px;
   text-align: center;
@@ -22421,7 +22432,7 @@ body.dark .balance__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 128px;
+  width: 248px;
   height: 128px;
   margin: 0 auto 20px;
   border-radius: 50%;
@@ -23529,14 +23540,4 @@ body.dark .score_text_s {
 
 p {
    margin: 0.5rem 0px;
-}
-
-#lottie{
-    width: 100%;
-    height: 100%;
-    display: block;
-    overflow: hidden;
-    transform: translate3d(0,0,0);
-    margin: 0 auto;
-    opacity: 1;
 }
