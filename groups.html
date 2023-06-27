@@ -518,7 +518,7 @@
           </div>
         </div>
         <div class="refunds customer card">
-          <div class="card__head">
+          <div class="card__head mb-16">
             <div class="card__select">
               <select class="select select_small">
                 <option selected>全ブランド</option>
@@ -553,365 +553,898 @@
               </select>
             </div>
           </div>
-
-          <div class="table-responsive">
-            <div class="customer__inner">
-              <div class="customer__container">
-                <div class="customer__wrapper">
-                  <div class="customer__table">
-                    <div class="customer__row">
-                      <div class="customer__col" style="text-align:left !important">グループ名</div>
-                      <div class="customer__col">回答数</div>
-                      <div class="customer__col">NPS</div>
-                      <div class="customer__col">総合スコア</div>
-                      <div class="customer__col score_header">雰囲気#<br>雰囲気･装飾</div>
-                      <div class="customer__col score_header">雰囲気#<br>音楽･ノイズ</div>
-                      <div class="customer__col score_header">雰囲気#<br>清潔感</div>
-                      <div class="customer__col score_header">雰囲気#<br>店内･席</div>
-                      <div class="customer__col score_header">料理#<br>見た目</div>
-                      <div class="customer__col score_header">料理#<br>分量</div>
-                      <div class="customer__col score_header">料理#<br>おすすめできるか</div>
-                      <div class="customer__col score_header">料理#<br>味</div>
-                      <div class="customer__col score_header">立地#<br>都心･繁華街にあるか</div>
-                      <div class="customer__col score_header">立地#<br>見つけやすいか</div>
-                      <div class="customer__col score_header">立地#<br>アクセスの良さ</div>
-                      <div class="customer__col score_header">価格#<br>コストパフォーマンス</div>
-                      <div class="customer__col score_header">価格#<br>割引について</div>
-                      <div class="customer__col score_header">価格#<br>水準</div>
-                      <div class="customer__col score_header">サービス#<br>接客</div>
-                      <div class="customer__col score_header">サービス#<br>駐車場の利便性</div>
-                      <div class="customer__col score_header">サービス#<br>入店までの待ち時間</div>
-                      <div class="customer__col score_header">サービス#<br>料理の提供時間</div>
+          <div class="overview js-tabs">
+              <div class="overview__nav">
+                <a class="overview__link js-tabs-link active" href="#">
+                  <div class="evaluation__tabs">
+                    <div class="overview__subtitle">評価カテゴリ別</div>
+                  </div>
+                </a>
+                <a class="overview__link js-tabs-link" href="#">
+                  <div class="evaluation__tabs">
+                    <div class="overview__subtitle" style="margin: 0 auto;">QSC項目</div>
+                  </div>
+                </a>
+                <a class="overview__link js-tabs-link" href="#">
+                  <div class="evaluation__tabs">
+                    <div class="overview__subtitle">全評価項目</div>
+                  </div>
+                </a>
+              </div>
+              <div class="overview__container">
+                <div class="overview__item js-tabs-item" style="display: block;">
+                  <div class="table-responsive">
+                    <div class="customer__inner">
+                      <div class="customer__container">
+                        <div class="customer__wrapper">
+                          <div class="customer__table">
+                            <div class="customer__row">
+                              <div class="customer__col" style="text-align:left !important">グループ名</div>
+                              <div class="customer__col">回答数</div>
+                              <div class="customer__col">NPS</div>
+                              <div class="customer__col">総合スコア</div>
+                              <div class="customer__col">雰囲気</div>
+                              <div class="customer__col">料理</div>
+                              <div class="customer__col">立地</div>
+                              <div class="customer__col">価格</div>
+                              <div class="customer__col">サービス</div>
+                              <div class="customer__col">その他</div>
+                            </div>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - 東京都</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">16</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">87</div>
+                              </div>
+                              <div class="customer__col score_text_p">16</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_p">4</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - 京都府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">39</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.9</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">79</div>
+                              </div>
+                              <div class="customer__col score_text_p">8</div>
+                              <div class="customer__col score_text_p">31</div>
+                              <div class="customer__col score_text_n">-3</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - 大阪府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">23</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">7.6</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">77</div>
+                              </div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">7</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - 東京都</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">12</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">9.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">83</div>
+                              </div>
+                              <div class="customer__col score_text_p">9</div>
+                              <div class="customer__col score_text_p">14</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - 京都府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">29</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">6.9</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">61</div>
+                              </div>
+                              <div class="customer__col score_text_p">10</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_p">11</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - 大阪府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">16</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">88</div>
+                              </div>
+                              <div class="customer__col score_text_p">16</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_p">4</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - SV1</div>
+                                    <div class="customer__login">SV</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">39</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.9</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">69</div>
+                              </div>
+                              <div class="customer__col score_text_p">8</div>
+                              <div class="customer__col score_text_p">31</div>
+                              <div class="customer__col score_text_n">-3</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - SV2</div>
+                                    <div class="customer__login">SV</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">23</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">7.6</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">87</div>
+                              </div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">7</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - SV1</div>
+                                    <div class="customer__login">SV</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">12</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">9.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">93</div>
+                              </div>
+                              <div class="customer__col score_text_p">9</div>
+                              <div class="customer__col score_text_p">14</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <a class="customer__row" href="group.html">
-                      <div class="customer__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description text-left">
-                            <div class="customer__user">牛鍋 吉田屋 - 東京都</div>
-                            <div class="customer__login">エリア</div>
+                  </div>
+                </div>
+                <div class="overview__item js-tabs-item" style="display: block;">
+                  <div class="table-responsive">
+                    <div class="customer__inner">
+                      <div class="customer__container">
+                        <div class="customer__wrapper">
+                          <div class="customer__table">
+                            <div class="customer__row">
+                              <div class="customer__col" style="text-align:left !important">グループ名</div>
+                              <div class="customer__col">回答数</div>
+                              <div class="customer__col">NPS</div>
+                              <div class="customer__col">総合スコア</div>
+                              <div class="customer__col score_header">雰囲気#<br>清潔感</div>
+                              <div class="customer__col score_header">料理#<br>見た目</div>
+                              <div class="customer__col score_header">料理#<br>分量</div>
+                              <div class="customer__col score_header">料理#<br>おすすめできるか</div>
+                              <div class="customer__col score_header">料理#<br>味</div>
+                              <div class="customer__col score_header">サービス#<br>接客</div>
+                              <div class="customer__col score_header">サービス#<br>入店までの待ち時間</div>
+                              <div class="customer__col score_header">サービス#<br>料理の提供時間</div>
+                              <div class="customer__col score_header">サービス#<br>その他</div>
+                            </div>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - 東京都</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">16</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">87</div>
+                              </div>
+                              <div class="customer__col score_text_p">16</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_p">4</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - 京都府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">39</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.9</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">79</div>
+                              </div>
+                              <div class="customer__col score_text_p">8</div>
+                              <div class="customer__col score_text_p">31</div>
+                              <div class="customer__col score_text_n">-3</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - 大阪府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">23</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">7.6</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">77</div>
+                              </div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">7</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - 東京都</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">12</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">9.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">83</div>
+                              </div>
+                              <div class="customer__col score_text_p">9</div>
+                              <div class="customer__col score_text_p">14</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - 京都府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">29</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">6.9</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">61</div>
+                              </div>
+                              <div class="customer__col score_text_p">10</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_p">11</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - 大阪府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">16</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">88</div>
+                              </div>
+                              <div class="customer__col score_text_p">16</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_p">4</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - SV1</div>
+                                    <div class="customer__login">SV</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">39</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.9</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">69</div>
+                              </div>
+                              <div class="customer__col score_text_p">8</div>
+                              <div class="customer__col score_text_p">31</div>
+                              <div class="customer__col score_text_n">-3</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - SV2</div>
+                                    <div class="customer__login">SV</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">23</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">7.6</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">87</div>
+                              </div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">7</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - SV1</div>
+                                    <div class="customer__login">SV</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">12</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">9.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">93</div>
+                              </div>
+                              <div class="customer__col score_text_p">9</div>
+                              <div class="customer__col score_text_p">14</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                            </a>
                           </div>
                         </div>
                       </div>
-                      <div class="customer__col">16</div>
-                      <div class="customer__col">
-                        <div class="status-orange customer__purchase">8.2</div>
-                      </div>
-                      <div class="customer__col">
-                        <div class="status-yellow customer__purchase">87</div>
-                      </div>
-                      <div class="customer__col score_text_p">16</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_p">4</div>
-                      <div class="customer__col score_text_n">-8</div>
-                      <div class="customer__col score_text_p">5</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_n">-5</div>
-                      <div class="customer__col score_text_p">41</div>
-                      <div class="customer__col score_text_p">28</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">15</div>
-                      <div class="customer__col score_text_p">3</div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_p">18</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_n">-13</div>
-                      <div class="customer__col score_text_p">21</div>
-                      <div class="customer__col score_text_p">8</div>
-                    </a>
-
-                    <a class="customer__row" href="group.html">
-                      <div class="customer__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description text-left">
-                            <div class="customer__user">牛鍋 吉田屋 - 京都府</div>
-                            <div class="customer__login">エリア</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="overview__item js-tabs-item">
+                  <div class="table-responsive">
+                    <div class="customer__inner">
+                      <div class="customer__container">
+                        <div class="customer__wrapper">
+                          <div class="customer__table">
+                            <div class="customer__row">
+                              <div class="customer__col" style="text-align:left !important">グループ名</div>
+                              <div class="customer__col">回答数</div>
+                              <div class="customer__col">NPS</div>
+                              <div class="customer__col">総合スコア</div>
+                              <div class="customer__col score_header">雰囲気#<br>雰囲気･装飾</div>
+                              <div class="customer__col score_header">雰囲気#<br>音楽･ノイズ</div>
+                              <div class="customer__col score_header">雰囲気#<br>清潔感</div>
+                              <div class="customer__col score_header">雰囲気#<br>店内･席</div>
+                              <div class="customer__col score_header">料理#<br>見た目</div>
+                              <div class="customer__col score_header">料理#<br>分量</div>
+                              <div class="customer__col score_header">料理#<br>おすすめできるか</div>
+                              <div class="customer__col score_header">料理#<br>味</div>
+                              <div class="customer__col score_header">立地#<br>都心･繁華街にあるか</div>
+                              <div class="customer__col score_header">立地#<br>見つけやすいか</div>
+                              <div class="customer__col score_header">立地#<br>アクセスの良さ</div>
+                              <div class="customer__col score_header">価格#<br>コストパフォーマンス</div>
+                              <div class="customer__col score_header">価格#<br>割引について</div>
+                              <div class="customer__col score_header">価格#<br>水準</div>
+                              <div class="customer__col score_header">サービス#<br>接客</div>
+                              <div class="customer__col score_header">サービス#<br>駐車場の利便性</div>
+                              <div class="customer__col score_header">サービス#<br>入店までの待ち時間</div>
+                              <div class="customer__col score_header">サービス#<br>料理の提供時間</div>
+                            </div>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - 東京都</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">16</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">87</div>
+                              </div>
+                              <div class="customer__col score_text_p">16</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_p">4</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">15</div>
+                              <div class="customer__col score_text_p">3</div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_p">18</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_n">-13</div>
+                              <div class="customer__col score_text_p">21</div>
+                              <div class="customer__col score_text_p">8</div>
+                            </a>
+                  
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - 京都府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">39</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.9</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">79</div>
+                              </div>
+                              <div class="customer__col score_text_p">8</div>
+                              <div class="customer__col score_text_p">31</div>
+                              <div class="customer__col score_text_n">-3</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">15</div>
+                              <div class="customer__col score_text_p">3</div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_p">18</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_n">-13</div>
+                              <div class="customer__col score_text_p">21</div>
+                              <div class="customer__col score_text_p">8</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - 大阪府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">23</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">7.6</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">77</div>
+                              </div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">7</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">15</div>
+                              <div class="customer__col score_text_p">3</div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_p">18</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_n">-13</div>
+                              <div class="customer__col score_text_p">21</div>
+                              <div class="customer__col score_text_p">8</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - 東京都</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">12</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">9.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">83</div>
+                              </div>
+                              <div class="customer__col score_text_p">9</div>
+                              <div class="customer__col score_text_p">14</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">15</div>
+                              <div class="customer__col score_text_p">3</div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_p">18</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_n">-13</div>
+                              <div class="customer__col score_text_p">21</div>
+                              <div class="customer__col score_text_p">8</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - 京都府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">29</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">6.9</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">61</div>
+                              </div>
+                              <div class="customer__col score_text_p">10</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_p">11</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">15</div>
+                              <div class="customer__col score_text_p">3</div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_p">18</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_n">-13</div>
+                              <div class="customer__col score_text_p">21</div>
+                              <div class="customer__col score_text_p">8</div>
+                            </a>
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - 大阪府</div>
+                                    <div class="customer__login">エリア</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">16</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">88</div>
+                              </div>
+                              <div class="customer__col score_text_p">16</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_p">4</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">15</div>
+                              <div class="customer__col score_text_p">3</div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_p">18</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_n">-13</div>
+                              <div class="customer__col score_text_p">21</div>
+                              <div class="customer__col score_text_p">8</div>
+                            </a>
+                  
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - SV1</div>
+                                    <div class="customer__login">SV</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">39</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">8.9</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">69</div>
+                              </div>
+                              <div class="customer__col score_text_p">8</div>
+                              <div class="customer__col score_text_p">31</div>
+                              <div class="customer__col score_text_n">-3</div>
+                              <div class="customer__col score_text_n">-8</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">15</div>
+                              <div class="customer__col score_text_p">3</div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_p">18</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_n">-13</div>
+                              <div class="customer__col score_text_p">21</div>
+                              <div class="customer__col score_text_p">8</div>
+                            </a>
+                  
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">牛鍋 吉田屋 - SV2</div>
+                                    <div class="customer__login">SV</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">23</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">7.6</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">87</div>
+                              </div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">7</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">15</div>
+                              <div class="customer__col score_text_p">3</div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_p">18</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_n">-13</div>
+                              <div class="customer__col score_text_p">21</div>
+                              <div class="customer__col score_text_p">8</div>
+                            </a>
+                  
+                            <a class="customer__row" href="group.html">
+                              <div class="customer__col">
+                                <div class="customer__item">
+                                  <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
+                                  <div class="customer__description text-left">
+                                    <div class="customer__user">万吉スープカレー - SV1</div>
+                                    <div class="customer__login">SV</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="customer__col">12</div>
+                              <div class="customer__col">
+                                <div class="status-orange customer__purchase">9.2</div>
+                              </div>
+                              <div class="customer__col">
+                                <div class="status-yellow customer__purchase">93</div>
+                              </div>
+                              <div class="customer__col score_text_p">9</div>
+                              <div class="customer__col score_text_p">14</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_n">-10</div>
+                              <div class="customer__col score_text_p">5</div>
+                              <div class="customer__col score_text_p">17</div>
+                              <div class="customer__col score_text_n">-5</div>
+                              <div class="customer__col score_text_p">41</div>
+                              <div class="customer__col score_text_p">28</div>
+                              <div class="customer__col score_text_n">-2</div>
+                              <div class="customer__col score_text_p">15</div>
+                              <div class="customer__col score_text_p">3</div>
+                              <div class="customer__col score_text_p">29</div>
+                              <div class="customer__col score_text_p">18</div>
+                              <div class="customer__col score_text_p">27</div>
+                              <div class="customer__col score_text_n">-13</div>
+                              <div class="customer__col score_text_p">21</div>
+                              <div class="customer__col score_text_p">8</div>
+                            </a>
+                  
                           </div>
                         </div>
                       </div>
-                      <div class="customer__col">39</div>
-                      <div class="customer__col">
-                        <div class="status-orange customer__purchase">8.9</div>
-                      </div>
-                      <div class="customer__col">
-                        <div class="status-yellow customer__purchase">79</div>
-                      </div>
-                      <div class="customer__col score_text_p">8</div>
-                      <div class="customer__col score_text_p">31</div>
-                      <div class="customer__col score_text_n">-3</div>
-                      <div class="customer__col score_text_n">-8</div>
-                      <div class="customer__col score_text_p">5</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_n">-5</div>
-                      <div class="customer__col score_text_p">41</div>
-                      <div class="customer__col score_text_p">28</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">15</div>
-                      <div class="customer__col score_text_p">3</div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_p">18</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_n">-13</div>
-                      <div class="customer__col score_text_p">21</div>
-                      <div class="customer__col score_text_p">8</div>
-                    </a>
-                    <a class="customer__row" href="group.html">
-                      <div class="customer__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description text-left">
-                            <div class="customer__user">牛鍋 吉田屋 - 大阪府</div>
-                            <div class="customer__login">エリア</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="customer__col">23</div>
-                      <div class="customer__col">
-                        <div class="status-orange customer__purchase">7.6</div>
-                      </div>
-                      <div class="customer__col">
-                        <div class="status-yellow customer__purchase">77</div>
-                      </div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_n">-10</div>
-                      <div class="customer__col score_text_p">7</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">5</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_n">-5</div>
-                      <div class="customer__col score_text_p">41</div>
-                      <div class="customer__col score_text_p">28</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">15</div>
-                      <div class="customer__col score_text_p">3</div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_p">18</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_n">-13</div>
-                      <div class="customer__col score_text_p">21</div>
-                      <div class="customer__col score_text_p">8</div>
-                    </a>
-                    <a class="customer__row" href="group.html">
-                      <div class="customer__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
-                          <div class="customer__description text-left">
-                            <div class="customer__user">万吉スープカレー - 東京都</div>
-                            <div class="customer__login">エリア</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="customer__col">12</div>
-                      <div class="customer__col">
-                        <div class="status-orange customer__purchase">9.2</div>
-                      </div>
-                      <div class="customer__col">
-                        <div class="status-yellow customer__purchase">83</div>
-                      </div>
-                      <div class="customer__col score_text_p">9</div>
-                      <div class="customer__col score_text_p">14</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_n">-10</div>
-                      <div class="customer__col score_text_p">5</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_n">-5</div>
-                      <div class="customer__col score_text_p">41</div>
-                      <div class="customer__col score_text_p">28</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">15</div>
-                      <div class="customer__col score_text_p">3</div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_p">18</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_n">-13</div>
-                      <div class="customer__col score_text_p">21</div>
-                      <div class="customer__col score_text_p">8</div>
-                    </a>
-                    <a class="customer__row" href="group.html">
-                      <div class="customer__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
-                          <div class="customer__description text-left">
-                            <div class="customer__user">万吉スープカレー - 京都府</div>
-                            <div class="customer__login">エリア</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="customer__col">29</div>
-                      <div class="customer__col">
-                        <div class="status-orange customer__purchase">6.9</div>
-                      </div>
-                      <div class="customer__col">
-                        <div class="status-yellow customer__purchase">61</div>
-                      </div>
-                      <div class="customer__col score_text_p">10</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_p">11</div>
-                      <div class="customer__col score_text_n">-8</div>
-                      <div class="customer__col score_text_p">5</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_n">-5</div>
-                      <div class="customer__col score_text_p">41</div>
-                      <div class="customer__col score_text_p">28</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">15</div>
-                      <div class="customer__col score_text_p">3</div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_p">18</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_n">-13</div>
-                      <div class="customer__col score_text_p">21</div>
-                      <div class="customer__col score_text_p">8</div>
-                    </a>
-                    <a class="customer__row" href="group.html">
-                      <div class="customer__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
-                          <div class="customer__description text-left">
-                            <div class="customer__user">万吉スープカレー - 大阪府</div>
-                            <div class="customer__login">エリア</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="customer__col">16</div>
-                      <div class="customer__col">
-                        <div class="status-orange customer__purchase">8.2</div>
-                      </div>
-                      <div class="customer__col">
-                        <div class="status-yellow customer__purchase">88</div>
-                      </div>
-                      <div class="customer__col score_text_p">16</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_p">4</div>
-                      <div class="customer__col score_text_n">-8</div>
-                      <div class="customer__col score_text_p">5</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_n">-5</div>
-                      <div class="customer__col score_text_p">41</div>
-                      <div class="customer__col score_text_p">28</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">15</div>
-                      <div class="customer__col score_text_p">3</div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_p">18</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_n">-13</div>
-                      <div class="customer__col score_text_p">21</div>
-                      <div class="customer__col score_text_p">8</div>
-                    </a>
-
-                    <a class="customer__row" href="group.html">
-                      <div class="customer__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description text-left">
-                            <div class="customer__user">牛鍋 吉田屋 - SV1</div>
-                            <div class="customer__login">SV</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="customer__col">39</div>
-                      <div class="customer__col">
-                        <div class="status-orange customer__purchase">8.9</div>
-                      </div>
-                      <div class="customer__col">
-                        <div class="status-yellow customer__purchase">69</div>
-                      </div>
-                      <div class="customer__col score_text_p">8</div>
-                      <div class="customer__col score_text_p">31</div>
-                      <div class="customer__col score_text_n">-3</div>
-                      <div class="customer__col score_text_n">-8</div>
-                      <div class="customer__col score_text_p">5</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_n">-5</div>
-                      <div class="customer__col score_text_p">41</div>
-                      <div class="customer__col score_text_p">28</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">15</div>
-                      <div class="customer__col score_text_p">3</div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_p">18</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_n">-13</div>
-                      <div class="customer__col score_text_p">21</div>
-                      <div class="customer__col score_text_p">8</div>
-                    </a>
-
-                    <a class="customer__row" href="group.html">
-                      <div class="customer__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description text-left">
-                            <div class="customer__user">牛鍋 吉田屋 - SV2</div>
-                            <div class="customer__login">SV</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="customer__col">23</div>
-                      <div class="customer__col">
-                        <div class="status-orange customer__purchase">7.6</div>
-                      </div>
-                      <div class="customer__col">
-                        <div class="status-yellow customer__purchase">87</div>
-                      </div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_n">-10</div>
-                      <div class="customer__col score_text_p">7</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">5</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_n">-5</div>
-                      <div class="customer__col score_text_p">41</div>
-                      <div class="customer__col score_text_p">28</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">15</div>
-                      <div class="customer__col score_text_p">3</div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_p">18</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_n">-13</div>
-                      <div class="customer__col score_text_p">21</div>
-                      <div class="customer__col score_text_p">8</div>
-                    </a>
-
-                    <a class="customer__row" href="group.html">
-                      <div class="customer__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
-                          <div class="customer__description text-left">
-                            <div class="customer__user">万吉スープカレー - SV1</div>
-                            <div class="customer__login">SV</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="customer__col">12</div>
-                      <div class="customer__col">
-                        <div class="status-orange customer__purchase">9.2</div>
-                      </div>
-                      <div class="customer__col">
-                        <div class="status-yellow customer__purchase">93</div>
-                      </div>
-                      <div class="customer__col score_text_p">9</div>
-                      <div class="customer__col score_text_p">14</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_n">-10</div>
-                      <div class="customer__col score_text_p">5</div>
-                      <div class="customer__col score_text_p">17</div>
-                      <div class="customer__col score_text_n">-5</div>
-                      <div class="customer__col score_text_p">41</div>
-                      <div class="customer__col score_text_p">28</div>
-                      <div class="customer__col score_text_n">-2</div>
-                      <div class="customer__col score_text_p">15</div>
-                      <div class="customer__col score_text_p">3</div>
-                      <div class="customer__col score_text_p">29</div>
-                      <div class="customer__col score_text_p">18</div>
-                      <div class="customer__col score_text_p">27</div>
-                      <div class="customer__col score_text_n">-13</div>
-                      <div class="customer__col score_text_p">21</div>
-                      <div class="customer__col score_text_p">8</div>
-                    </a>
-
+                    </div>
                   </div>
                 </div>
               </div>

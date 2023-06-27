@@ -8227,7 +8227,6 @@ body.dark .overview__link4.active {
 
 
 .overview__subtitle {
-  display: flex;
   align-items: center;
   vertical-align: middle;
   font-size: 13px;
@@ -23596,4 +23595,6 @@ p {
 
 .evaluation__tabs {
   margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
 }
