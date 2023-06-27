@@ -85,6 +85,170 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   }
 })();
 
+// evaluation-category
+
+(function() {
+  var options = {
+    series: [{
+      name: 'ポジティブ',
+      data: [45, 115, 93, 54, 80, 79]
+    }, {
+      name: 'ネガティブ',
+      data: [-11, -5, -13, -19, -3, -18]
+    }],
+    chart: {
+      type: 'bar',
+      stacked: true,
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '65%'
+      }
+    },
+    colors: ['#FFA50E', '#9A9FA5'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: false
+    },
+    xaxis: {
+      categories: ["雰囲気", "料理", "立地", "価格", "サービス", "その他"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: -20,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-category');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+
+// evaluation-qsc
+
+(function() {
+  var options = {
+    series: [{
+      name: 'ポジティブ',
+      data: [20, 60, 45, 16, 20, 115, 25, 23, 93]
+    }, {
+      name: 'ネガティブ',
+      data: [-3, -4, -5, -1, -2, -11, -5, -3, -19]
+    }],
+    chart: {
+      type: 'bar',
+      stacked: true,
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', '#9A9FA5'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: false
+    },
+    xaxis: {
+      categories: ["雰囲気#清潔感", "料理#見た目", "料理#分量", "料理#おすすめできるか", "料理#味", "サービス#接客", "サービス#入店までの待ち時間", "サービス#料理の提供時間", "サービス#その他"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: -20,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-qsc');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
 
 // Answer Chart
 

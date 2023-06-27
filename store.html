@@ -704,397 +704,431 @@
               </select>
             </div>
           </div>
-          <div class="card__chart card__chart_evaluation-analysis">
-            <div id="evaluation-analysis"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__head">
-            <div class="title-yellow card__title">評価項目別スコア</div>
-            <div class="card__select">
-              <select class="select select_small">
-                <option>直近7日</option>
-                <option>直近30日</option>
-                <option selected>直近3ヶ月</option>
-                <option>直近1年</option>
-                <option>全期間</option>
-              </select>
-            </div>
-            <div class="card__select ml-8 mobile-hide">
-              <select class="select select_small">
-                <option>比較:グループ平均</option>
-                <option>比較:ブランド平均</option>
-                <option selected>比較:全店舗平均</option>
-              </select>
-            </div>
-          </div>
-          <div class="card__chart card__chart_evaluation-score">
-            <div id="evaluation-score-store"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__head">
-            <div class="title-red card__title">回答者属性</div>
-            <div class="card__select">
-              <select class="select select_small">
-                <option selected>直近7日</option>
-                <option>直近30日</option>
-                <option>直近3ヶ月</option>
-                <option>直近1年</option>
-                <option>全期間</option>
-              </select>
-            </div>
-          </div>
-          <div class="demography">
-            <div class="demography__list">
-              <div class="demography__item_1">
-                <div class="demography__subtitle_1">年齢</div>
-                <div class="card__chart card__chart_demography">
-                  <div id="age-chart"></div>
-                </div>
+          <div class="overview js-tabs">
+              <div class="overview__nav">
+                <a class="overview__link js-tabs-link active" href="#">
+                  <div class="evaluation__tabs">
+                    <div class="overview__subtitle">評価カテゴリ別</div>
+                  </div>
+                </a>
+                <a class="overview__link js-tabs-link" href="#">
+                  <div class="evaluation__tabs">
+                    <div class="overview__subtitle" style="margin: 0 auto;">QSC項目</div>
+                  </div>
+                </a>
+                <a class="overview__link js-tabs-link" href="#">
+                  <div class="evaluation__tabs">
+                    <div class="overview__subtitle">全評価項目</div>
+                  </div>
+                </a>
               </div>
-              <div class="demography__item_2">
-                <div class="demography__subtitle_2">性別</div>
-                <div class="card__chart card__chart_demography">
-                  <div id="gender-chart"></div>
+              <div class="overview__container">
+                <div class="overview__item js-tabs-item" style="display: block;">
+                  <div class="evaluation__chart">
+                    <div id="evaluation-category"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="demography__item_3">
-                <div class="demography__subtitle_3">職業</div>
-                <div class="card__chart card__chart_demography">
-                  <div id="occupation-chart"></div>
+                <div class="overview__item js-tabs-item" style="display: block;">
+                  <div class="evaluation__chart">
+                    <div id="evaluation-qsc"></div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="demography__list">
-              <div class="demography__item_4">
-                <div class="demography__subtitle_4">来店回数</div>
-                <div class="card__chart card__chart_demography">
-                  <div id="visits-chart"></div>
-                </div>
-              </div>
-              <div class="demography__item_5">
-                <div class="demography__subtitle_5">前回来店</div>
-                <div class="card__chart card__chart_demography">
-                  <div id="last-chart"></div>
-                </div>
-              </div>
-              <div class="demography__item_6">
-                <div class="demography__subtitle_6">居住エリア</div>
-                <div class="card__chart card__chart_demography">
-                  <div id="address-city-chart"></div>
+                <div class="overview__item js-tabs-item">
+                  <div class="evaluation__chart">
+                    <div id="evaluation-analysis"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card__head">
-            <div class="title-orange card__title">直近のアンケート回答</div>
-            <a class="button-stroke button-small card__button" href="store-reviews.html">
-              <span>回答一覧</span>
-              <svg class="icon icon-arrow-right">
-                <use xlink:href="#icon-arrow-right"></use>
-              </svg>
-            </a>
+          <div class="card">
+            <div class="card__head">
+              <div class="title-yellow card__title">評価項目別スコア</div>
+              <div class="card__select">
+                <select class="select select_small">
+                  <option>直近7日</option>
+                  <option>直近30日</option>
+                  <option selected>直近3ヶ月</option>
+                  <option>直近1年</option>
+                  <option>全期間</option>
+                </select>
+              </div>
+              <div class="card__select ml-8 mobile-hide">
+                <select class="select select_small">
+                  <option>比較:グループ平均</option>
+                  <option>比較:ブランド平均</option>
+                  <option selected>比較:全店舗平均</option>
+                </select>
+              </div>
+            </div>
+            <div class="card__chart card__chart_evaluation-score">
+              <div id="evaluation-score-store"></div>
+            </div>
           </div>
-          <div class="qs__wrapper">
-            <div class="qs__table">
-              <div class="qs__row">
-                <div class="qs__col">回答内容</div>
-                <div class="qs__col">回答日時</div>
-                <div class="qs__col text-end">来店回数</div>
+          <div class="card">
+            <div class="card__head">
+              <div class="title-red card__title">回答者属性</div>
+              <div class="card__select">
+                <select class="select select_small">
+                  <option selected>直近7日</option>
+                  <option>直近30日</option>
+                  <option>直近3ヶ月</option>
+                  <option>直近1年</option>
+                  <option>全期間</option>
+                </select>
               </div>
-              <div class="qs__row" data-popup=".js-popup-qs">
-                <div class="qs__col">
-                  <div class="qs__item">
-                    <div class="score__number score__middle">
-                      8
-                    </div>
-                    <div class="qs__details">
-                      <div class="qs__comment">テーブルの間隔が狭くて、あまり食事に集中できませんでした。せめて隣に気を遣わずに通れるくらいの幅にしていただきたいです。これでは飲み物のグラスとかを倒してしまいそうで怖いです。食事は美味しかったです。</div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        料理#味
-                      </div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        雰囲気#店内･席
-                      </div>
-                    </div>
+            </div>
+            <div class="demography">
+              <div class="demography__list">
+                <div class="demography__item_1">
+                  <div class="demography__subtitle_1">年齢</div>
+                  <div class="card__chart card__chart_demography">
+                    <div id="age-chart"></div>
                   </div>
                 </div>
-                <div class="qs__col text-gray">2023/2/13 17:51</div>
-                <div class="qs__col text-end">
-                  <div class="status-purple-light press__distribution">はじめて</div>
-                </div>
-              </div>
-              <div class="qs__row" data-popup=".js-popup-qs">
-                <div class="qs__col">
-                  <div class="qs__item">
-                    <div class="score__number score__low">
-                      4
-                    </div>
-                    <div class="qs__details">
-                      <div class="qs__comment">子供の声がうるさく、あまり食事に集中できませんでした。ファミレスのような感じでした。店員さんが注意してくれたらなと思ったんですが、忙しそうで言えませんでした。せっかくオシャレなのだから、うるさいお客さんとかは注意しても良いのでは。ご飯は美味しかったです。</div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        雰囲気#装飾･雰囲気
-                      </div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        料理#味
-                      </div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        雰囲気#音楽･ノイズ
-                      </div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        サービス#接客
-                      </div>
-                    </div>
+                <div class="demography__item_2">
+                  <div class="demography__subtitle_2">性別</div>
+                  <div class="card__chart card__chart_demography">
+                    <div id="gender-chart"></div>
                   </div>
                 </div>
-                <div class="qs__col text-gray">2023/2/13 17:51</div>
-                <div class="qs__col text-end">
-                  <div class="status-orange-light press__distribution">2-3回目</div>
-                </div>
-              </div>
-              <div class="qs__row" data-popup=".js-popup-qs">
-                <div class="qs__col">
-                  <div class="qs__item">
-                    <div class="score__number score__high">
-                      9
-                    </div>
-                    <div class="qs__details">
-                      <div class="qs__comment">記念日での利用だったが、スマートな接客で、ここを選んでよかったです。飲み物をこぼしてしまった時の対応も、気遣いがしっかりしていて、食事を楽しめました。コース料理がもう少しゆっくり出てきても良い気がしましたが、全体的には大満足です。</div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        サービス#接客
-                      </div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        サービス#料理の提供時間
-                      </div>
-                    </div>
+                <div class="demography__item_3">
+                  <div class="demography__subtitle_3">職業</div>
+                  <div class="card__chart card__chart_demography">
+                    <div id="occupation-chart"></div>
                   </div>
                 </div>
-                <div class="qs__col text-gray">2023/2/13 17:51</div>
-                <div class="qs__col text-end">
-                  <div class="status-red-light press__distribution">覚えていない</div>
-                </div>
               </div>
-              <div class="qs__row" data-popup=".js-popup-qs">
-                <div class="qs__col">
-                  <div class="qs__item">
-                    <div class="score__number score__low">
-                      4
-                    </div>
-                    <div class="qs__details">
-                      <div class="qs__comment">トイレの洗面台に汚物のようなものが放置されており、気分が悪くなりました。定期的にチェックしてほしいです。床に落ちているゴミも少し気になりました。料理は普通に美味しかったです。</div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        料理#味
-                      </div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        雰囲気#清潔感
-                      </div>
-                    </div>
+              <div class="demography__list">
+                <div class="demography__item_4">
+                  <div class="demography__subtitle_4">来店回数</div>
+                  <div class="card__chart card__chart_demography">
+                    <div id="visits-chart"></div>
                   </div>
                 </div>
-                <div class="qs__col text-gray">2023/2/13 17:51</div>
-                <div class="qs__col text-end">
-                  <div class="status-red-light press__distribution">覚えていない</div>
-                </div>
-              </div>
-              <div class="qs__row" data-popup=".js-popup-qs">
-                <div class="qs__col">
-                  <div class="qs__item">
-                    <div class="score__number score__low">
-                      3
-                    </div>
-                    <div class="qs__details">
-                      <div class="qs__comment">料理が運ばれてきたのが、注文から30分後くらいで、待ちくたびれてしまいました。料理を持ってきた時も、お待たせしましたの一言もなし。ちょっと残念です。空いたお皿を下げてくれるなどもなく、不快でした。そう考えると、少し高いのかな。。</div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        価格#コストパフォーマンス
-                      </div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        サービス#接客
-                      </div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        サービス#料理の提供時間
-                      </div>
-                    </div>
+                <div class="demography__item_5">
+                  <div class="demography__subtitle_5">前回来店</div>
+                  <div class="card__chart card__chart_demography">
+                    <div id="last-chart"></div>
                   </div>
                 </div>
-                <div class="qs__col text-gray">2023/2/13 17:51</div>
-                <div class="qs__col text-end">
-                  <div class="status-yellow-light press__distribution">4回以上</div>
-                </div>
-              </div>
-              <div class="qs__row" data-popup=".js-popup-qs">
-                <div class="qs__col">
-                  <div class="qs__item">
-                    <div class="score__number score__high">
-                      10
-                    </div>
-                    <div class="qs__details">
-                      <div class="qs__comment">スタッフがとても親切で好印象でした。注文した料理はとても美味しく、3000円台とは思えないクオリティでした。
-                      </div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        雰囲気#装飾･雰囲気
-                      </div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        価格#コストパフォーマンス
-                      </div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        サービス#接客
-                      </div>
-                    </div>
+                <div class="demography__item_6">
+                  <div class="demography__subtitle_6">居住エリア</div>
+                  <div class="card__chart card__chart_demography">
+                    <div id="address-city-chart"></div>
                   </div>
-                </div>
-                <div class="qs__col text-gray">2023/2/13 17:51</div>
-                <div class="qs__col text-end">
-                  <div class="status-orange-light press__distribution">2-3回目</div>
-                </div>
-              </div>
-              <div class="qs__row" data-popup=".js-popup-qs">
-                <div class="qs__col">
-                  <div class="qs__item">
-                    <div class="score__number score__high">
-                      9
-                    </div>
-                    <div class="qs__details">
-                      <div class="qs__comment">量が多いのが良かったです！駐車場も広くて止めやすかった！</div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        サービス#駐車場の利便性
-                      </div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        料理#分量
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="qs__col text-gray">2023/2/13 17:51</div>
-                <div class="qs__col text-end">
-                  <div class="status-purple-light press__distribution">はじめて</div>
-                </div>
-              </div>
-              <div class="qs__row" data-popup=".js-popup-qs">
-                <div class="qs__col">
-                  <div class="qs__item">
-                    <div class="score__number score__high">
-                      9
-                    </div>
-                    <div class="qs__details">
-                      <div class="qs__comment">ランチですごく混んでいてびっくりしたけど、満足できて待った甲斐があった。子供もピザが美味しいと言っていた。今度ママ友と来たいと思います。</div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                       料理#おすすめできるか
-                      </div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                       料理#味
-                      </div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        サービス#入店までの待ち時間
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="qs__col text-gray">2023/2/13 17:51</div>
-                <div class="qs__col text-end">
-                  <div class="status-yellow-light press__distribution">4回以上</div>
-                </div>
-              </div>
-              <div class="qs__row" data-popup=".js-popup-qs">
-                <div class="qs__col">
-                  <div class="qs__item">
-                    <div class="score__number score__middle">
-                      7
-                    </div>
-                    <div class="qs__details">
-                      <div class="qs__comment">店員さんが生き生きしていました。グラスを割ってしまったのも、丁寧に対応してくれたので良かったです。キッチンの人は忙しそうで、もっと楽しそうだったらこちらも気分が上がると思います。</div>
-                      <div class="balance background plus">
-                        <svg class="icon icon-good">
-                          <use xlink:href="#icon-good"></use>
-                        </svg>
-                        サービス#接客
-                      </div>
-                      <div class="balance background minus">
-                        <svg class="icon icon-bad">
-                          <use xlink:href="#icon-bad"></use>
-                        </svg>
-                        雰囲気#装飾･雰囲気
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="qs__col text-gray">2023/2/13 17:51</div>
-                <div class="qs__col text-end">
-                  <div class="status-orange-light press__distribution">2-3回目</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="qs__foot">
-            <button class="button-stroke button-small qs__button">
-              <div class="loader"></div>
-              <span>もっと見る</span>
-            </button>
+          <div class="card">
+            <div class="card__head">
+              <div class="title-orange card__title">直近のアンケート回答</div>
+              <a class="button-stroke button-small card__button" href="store-reviews.html">
+                <span>回答一覧</span>
+                <svg class="icon icon-arrow-right">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="qs__wrapper">
+              <div class="qs__table">
+                <div class="qs__row">
+                  <div class="qs__col">回答内容</div>
+                  <div class="qs__col">回答日時</div>
+                  <div class="qs__col text-end">来店回数</div>
+                </div>
+                <div class="qs__row" data-popup=".js-popup-qs">
+                  <div class="qs__col">
+                    <div class="qs__item">
+                      <div class="score__number score__middle">
+                        8
+                      </div>
+                      <div class="qs__details">
+                        <div class="qs__comment">テーブルの間隔が狭くて、あまり食事に集中できませんでした。せめて隣に気を遣わずに通れるくらいの幅にしていただきたいです。これでは飲み物のグラスとかを倒してしまいそうで怖いです。食事は美味しかったです。</div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          料理#味
+                        </div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          雰囲気#店内･席
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qs__col text-gray">2023/2/13 17:51</div>
+                  <div class="qs__col text-end">
+                    <div class="status-purple-light press__distribution">はじめて</div>
+                  </div>
+                </div>
+                <div class="qs__row" data-popup=".js-popup-qs">
+                  <div class="qs__col">
+                    <div class="qs__item">
+                      <div class="score__number score__low">
+                        4
+                      </div>
+                      <div class="qs__details">
+                        <div class="qs__comment">子供の声がうるさく、あまり食事に集中できませんでした。ファミレスのような感じでした。店員さんが注意してくれたらなと思ったんですが、忙しそうで言えませんでした。せっかくオシャレなのだから、うるさいお客さんとかは注意しても良いのでは。ご飯は美味しかったです。</div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          雰囲気#装飾･雰囲気
+                        </div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          料理#味
+                        </div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          雰囲気#音楽･ノイズ
+                        </div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          サービス#接客
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qs__col text-gray">2023/2/13 17:51</div>
+                  <div class="qs__col text-end">
+                    <div class="status-orange-light press__distribution">2-3回目</div>
+                  </div>
+                </div>
+                <div class="qs__row" data-popup=".js-popup-qs">
+                  <div class="qs__col">
+                    <div class="qs__item">
+                      <div class="score__number score__high">
+                        9
+                      </div>
+                      <div class="qs__details">
+                        <div class="qs__comment">記念日での利用だったが、スマートな接客で、ここを選んでよかったです。飲み物をこぼしてしまった時の対応も、気遣いがしっかりしていて、食事を楽しめました。コース料理がもう少しゆっくり出てきても良い気がしましたが、全体的には大満足です。</div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          サービス#接客
+                        </div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          サービス#料理の提供時間
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qs__col text-gray">2023/2/13 17:51</div>
+                  <div class="qs__col text-end">
+                    <div class="status-red-light press__distribution">覚えていない</div>
+                  </div>
+                </div>
+                <div class="qs__row" data-popup=".js-popup-qs">
+                  <div class="qs__col">
+                    <div class="qs__item">
+                      <div class="score__number score__low">
+                        4
+                      </div>
+                      <div class="qs__details">
+                        <div class="qs__comment">トイレの洗面台に汚物のようなものが放置されており、気分が悪くなりました。定期的にチェックしてほしいです。床に落ちているゴミも少し気になりました。料理は普通に美味しかったです。</div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          料理#味
+                        </div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          雰囲気#清潔感
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qs__col text-gray">2023/2/13 17:51</div>
+                  <div class="qs__col text-end">
+                    <div class="status-red-light press__distribution">覚えていない</div>
+                  </div>
+                </div>
+                <div class="qs__row" data-popup=".js-popup-qs">
+                  <div class="qs__col">
+                    <div class="qs__item">
+                      <div class="score__number score__low">
+                        3
+                      </div>
+                      <div class="qs__details">
+                        <div class="qs__comment">料理が運ばれてきたのが、注文から30分後くらいで、待ちくたびれてしまいました。料理を持ってきた時も、お待たせしましたの一言もなし。ちょっと残念です。空いたお皿を下げてくれるなどもなく、不快でした。そう考えると、少し高いのかな。。</div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          価格#コストパフォーマンス
+                        </div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          サービス#接客
+                        </div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          サービス#料理の提供時間
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qs__col text-gray">2023/2/13 17:51</div>
+                  <div class="qs__col text-end">
+                    <div class="status-yellow-light press__distribution">4回以上</div>
+                  </div>
+                </div>
+                <div class="qs__row" data-popup=".js-popup-qs">
+                  <div class="qs__col">
+                    <div class="qs__item">
+                      <div class="score__number score__high">
+                        10
+                      </div>
+                      <div class="qs__details">
+                        <div class="qs__comment">スタッフがとても親切で好印象でした。注文した料理はとても美味しく、3000円台とは思えないクオリティでした。
+                        </div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          雰囲気#装飾･雰囲気
+                        </div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          価格#コストパフォーマンス
+                        </div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          サービス#接客
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qs__col text-gray">2023/2/13 17:51</div>
+                  <div class="qs__col text-end">
+                    <div class="status-orange-light press__distribution">2-3回目</div>
+                  </div>
+                </div>
+                <div class="qs__row" data-popup=".js-popup-qs">
+                  <div class="qs__col">
+                    <div class="qs__item">
+                      <div class="score__number score__high">
+                        9
+                      </div>
+                      <div class="qs__details">
+                        <div class="qs__comment">量が多いのが良かったです！駐車場も広くて止めやすかった！</div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          サービス#駐車場の利便性
+                        </div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          料理#分量
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qs__col text-gray">2023/2/13 17:51</div>
+                  <div class="qs__col text-end">
+                    <div class="status-purple-light press__distribution">はじめて</div>
+                  </div>
+                </div>
+                <div class="qs__row" data-popup=".js-popup-qs">
+                  <div class="qs__col">
+                    <div class="qs__item">
+                      <div class="score__number score__high">
+                        9
+                      </div>
+                      <div class="qs__details">
+                        <div class="qs__comment">ランチですごく混んでいてびっくりしたけど、満足できて待った甲斐があった。子供もピザが美味しいと言っていた。今度ママ友と来たいと思います。</div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                         料理#おすすめできるか
+                        </div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                         料理#味
+                        </div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          サービス#入店までの待ち時間
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qs__col text-gray">2023/2/13 17:51</div>
+                  <div class="qs__col text-end">
+                    <div class="status-yellow-light press__distribution">4回以上</div>
+                  </div>
+                </div>
+                <div class="qs__row" data-popup=".js-popup-qs">
+                  <div class="qs__col">
+                    <div class="qs__item">
+                      <div class="score__number score__middle">
+                        7
+                      </div>
+                      <div class="qs__details">
+                        <div class="qs__comment">店員さんが生き生きしていました。グラスを割ってしまったのも、丁寧に対応してくれたので良かったです。キッチンの人は忙しそうで、もっと楽しそうだったらこちらも気分が上がると思います。</div>
+                        <div class="balance background plus">
+                          <svg class="icon icon-good">
+                            <use xlink:href="#icon-good"></use>
+                          </svg>
+                          サービス#接客
+                        </div>
+                        <div class="balance background minus">
+                          <svg class="icon icon-bad">
+                            <use xlink:href="#icon-bad"></use>
+                          </svg>
+                          雰囲気#装飾･雰囲気
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="qs__col text-gray">2023/2/13 17:51</div>
+                  <div class="qs__col text-end">
+                    <div class="status-orange-light press__distribution">2-3回目</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="qs__foot">
+              <button class="button-stroke button-small qs__button">
+                <div class="loader"></div>
+                <span>もっと見る</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
