@@ -16432,8 +16432,8 @@ body.dark .customer__row:not(:first-child) {
   display: table-cell;
   text-align: right;
   font-size: 20px;
-  min-width: 120px;
   vertical-align: middle;
+  white-space: nowrap;
   padding: 16px 12px;
   color: #1A1D1F;
 }
@@ -16482,8 +16482,8 @@ body.dark .customer__col:after {
 }
 
 .customer__col:first-child {
-  min-width: 280px;
   border-radius: 8px 0 0 8px;
+  white-space: nowrap;
   position: sticky;
   left: 0;
   font-size: 14px;
@@ -16499,6 +16499,7 @@ body.dark .customer__col:after {
 
 .customer__row:first-child .customer__col:first-child {
   background: var(--recopo-white);
+  white-space: nowrap;
   position: sticky;
   top: 0;
   z-index: 2;
