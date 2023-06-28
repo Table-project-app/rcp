@@ -174,10 +174,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   var options = {
     series: [{
       name: 'ポジティブ',
-      data: [20, 60, 45, 16, 20, 115, 25, 23, 93]
+      data: [94, 60, 78]
     }, {
       name: 'ネガティブ',
-      data: [-3, -4, -5, -1, -2, -11, -5, -3, -19]
+      data: [-13, -24, -15]
     }],
     chart: {
       type: 'bar',
@@ -202,7 +202,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         show: false
     },
     xaxis: {
-      categories: ["雰囲気#清潔感", "料理#見た目", "料理#分量", "料理#おすすめできるか", "料理#味", "サービス#接客", "サービス#入店までの待ち時間", "サービス#料理の提供時間", "サービス#その他"],
+      categories: ["Q:クオリティ", "S:サービス", "C:クレンリネス"],
       axisBorder: {
         show: false
       },
