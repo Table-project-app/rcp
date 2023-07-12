@@ -8117,6 +8117,40 @@ body.dark .overview__link4.active {
   background: #1A1D1F;
 }
 
+.overview__link2 {
+  display: flex;
+  padding: 20px;
+  flex: 0 0 50%;
+  border-radius: 8px;
+  color: #1A1D1F;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: all .2s;
+}
+
+@media only screen and (max-width: 1419px) {
+  .overview__link2 {
+    padding: 14px 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .overview__link2 {
+    display: block;
+  }
+}
+
+body.dark .overview__link4 {
+  color: #FCFCFC;
+}
+
+.overview__link2.active {
+  background: #FCFCFC;
+}
+
+body.dark .overview__link4.active {
+  background: #1A1D1F;
+}
+
 .overview__icon_orange {
   display: flex;
   justify-content: center;

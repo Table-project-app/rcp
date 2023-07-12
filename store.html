@@ -705,66 +705,101 @@
             </div>
           </div>
           <div class="overview js-tabs">
-              <div class="overview__nav">
-                <a class="overview__link js-tabs-link active" href="#">
-                  <div class="evaluation__tabs">
-                    <div class="overview__subtitle">評価カテゴリ別</div>
-                  </div>
-                </a>
-                <a class="overview__link js-tabs-link" href="#">
-                  <div class="evaluation__tabs">
-                    <div class="overview__subtitle" style="margin: 0 auto;">QSC項目</div>
-                  </div>
-                </a>
-                <a class="overview__link js-tabs-link" href="#">
-                  <div class="evaluation__tabs">
-                    <div class="overview__subtitle">全評価項目</div>
-                  </div>
-                </a>
+            <div class="overview__nav">
+              <a class="overview__link js-tabs-link active" href="#">
+                <div class="evaluation__tabs">
+                  <div class="overview__subtitle">評価カテゴリ別</div>
+                </div>
+              </a>
+              <a class="overview__link js-tabs-link" href="#">
+                <div class="evaluation__tabs">
+                  <div class="overview__subtitle" style="margin: 0 auto;">QSC項目</div>
+                </div>
+              </a>
+              <a class="overview__link js-tabs-link" href="#">
+                <div class="evaluation__tabs">
+                  <div class="overview__subtitle">全評価項目</div>
+                </div>
+              </a>
+            </div>
+            <div class="overview__container">
+              <div class="overview__item js-tabs-item" style="display: block;">
+                <div class="evaluation__chart">
+                  <div id="evaluation-category"></div>
+                </div>
               </div>
-              <div class="overview__container">
-                <div class="overview__item js-tabs-item" style="display: block;">
-                  <div class="evaluation__chart">
-                    <div id="evaluation-category"></div>
-                  </div>
+              <div class="overview__item js-tabs-item" style="display: block;">
+                <div class="evaluation__chart">
+                  <div id="evaluation-qsc"></div>
                 </div>
-                <div class="overview__item js-tabs-item" style="display: block;">
-                  <div class="evaluation__chart">
-                    <div id="evaluation-qsc"></div>
-                  </div>
-                </div>
-                <div class="overview__item js-tabs-item">
-                  <div class="evaluation__chart">
-                    <div id="evaluation-analysis"></div>
-                  </div>
+              </div>
+              <div class="overview__item js-tabs-item">
+                <div class="evaluation__chart">
+                  <div id="evaluation-analysis"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card__head">
-              <div class="title-yellow card__title">評価項目別スコア</div>
-              <div class="card__select">
-                <select class="select select_small">
-                  <option>直近7日</option>
-                  <option>直近30日</option>
-                  <option selected>直近3ヶ月</option>
-                  <option>直近1年</option>
-                  <option>全期間</option>
-                </select>
-              </div>
-              <div class="card__select ml-8 mobile-hide">
-                <select class="select select_small">
-                  <option>比較:グループ平均</option>
-                  <option>比較:ブランド平均</option>
-                  <option selected>比較:全店舗平均</option>
-                </select>
-              </div>
+        </div>
+        
+        <div class="card">
+          <div class="card__head">
+            <div class="title-yellow card__title">評価項目別スコア</div>
+            <div class="card__select">
+              <select class="select select_small">
+                <option>直近7日</option>
+                <option>直近30日</option>
+                <option selected>直近3ヶ月</option>
+                <option>直近1年</option>
+                <option>全期間</option>
+              </select>
             </div>
-            <div class="card__chart card__chart_evaluation-score">
-              <div id="evaluation-score-store"></div>
+            <div class="card__select ml-8 mobile-hide">
+              <select class="select select_small">
+                <option>比較:グループ平均</option>
+                <option>比較:ブランド平均</option>
+                <option selected>比較:全店舗平均</option>
+              </select>
             </div>
           </div>
+          <div class="overview js-tabs">
+            <div class="overview__nav">
+              <a class="overview__link js-tabs-link active" href="#">
+                <div class="evaluation__tabs">
+                  <div class="overview__subtitle">評価カテゴリ別</div>
+                </div>
+              </a>
+              <a class="overview__link js-tabs-link" href="#">
+                <div class="evaluation__tabs">
+                  <div class="overview__subtitle" style="margin: 0 auto;">QSC項目</div>
+                </div>
+              </a>
+              <a class="overview__link js-tabs-link" href="#">
+                <div class="evaluation__tabs">
+                  <div class="overview__subtitle">全評価項目</div>
+                </div>
+              </a>
+            </div>
+            <div class="overview__container">
+              <div class="overview__item js-tabs-item" style="display: block;">
+                <div class="evaluation__chart">
+                  <div id="evaluation-score-store-store-category"></div>
+                </div>
+              </div>
+              <div class="overview__item js-tabs-item" style="display: block;">
+                <div class="evaluation__chart">
+                  <div id="evaluation-score-store-store-qsc"></div>
+                </div>
+              </div>
+              <div class="overview__item js-tabs-item">
+                <div class="evaluation__chart">
+                  <div id="evaluation-score-store-store"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
           <div class="card">
             <div class="card__head">
               <div class="title-red card__title">回答者属性</div>

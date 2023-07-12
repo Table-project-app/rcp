@@ -2206,3 +2206,1082 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     new ApexCharts(chart, options).render();
   }
 })();
+
+// evaluation-score-brand
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 八丁堀店',
+      data: [58, 94, 85, 42, 95, 83, 74, 90, 93, 72, 82, 84, 90, 79, 83, 68, 78, 92]
+    }, {
+      name: '牛鍋 吉田屋 ブランド平均',
+    data: [73, 74, 85, 71, 82, 91, 75, 83, 89, 73, 82, 74, 82, 89, 73, 88, 83, 72]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気#雰囲気･装飾", "雰囲気#音楽･ノイズ", "雰囲気#清潔感", "雰囲気#店内･席", "料理#見た目", "料理#分量", "料理#おすすめできるか", "料理#味", "立地#都心･繁華街にあるか", "立地#見つけやすいか", "立地#アクセスの良さ", "価格#コストパフォーマンス", "価格#割引について", "価格#水準", "サービス#接客", "サービス#駐車場の利便性", "サービス#入店までの待ち時間", "サービス#料理の提供時間"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: false
+      }
+    },
+    grid: {
+      show: false,
+      strokeDashArray: 0,
+      padding: {
+        top: -20,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-brand');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-group
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 八丁堀店',
+      data: [58, 94, 85, 42, 95, 83, 74, 90, 93, 72, 82, 84, 90, 79, 83, 68, 78, 92]
+    }, {
+      name: '牛鍋 吉田屋 - 東京都 平均',
+    data: [73, 74, 85, 71, 82, 91, 75, 83, 89, 73, 82, 74, 82, 89, 73, 88, 83, 72]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気#雰囲気･装飾", "雰囲気#音楽･ノイズ", "雰囲気#清潔感", "雰囲気#店内･席", "料理#見た目", "料理#分量", "料理#おすすめできるか", "料理#味", "立地#都心･繁華街にあるか", "立地#見つけやすいか", "立地#アクセスの良さ", "価格#コストパフォーマンス", "価格#割引について", "価格#水準", "サービス#接客", "サービス#駐車場の利便性", "サービス#入店までの待ち時間", "サービス#料理の提供時間"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: false
+      }
+    },
+    grid: {
+      show: false,
+      strokeDashArray: 0,
+      padding: {
+        top: -20,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-group');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-brand-store
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 ブランド平均',
+      data: [58, 94, 85, 42, 95, 83, 74, 90, 93, 72, 82, 84, 90, 79, 83, 68, 78, 92]
+    }, {
+      name: '全店舗平均',
+    data: [73, 74, 85, 71, 82, 91, 75, 83, 89, 73, 82, 74, 82, 89, 73, 88, 83, 72]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気#雰囲気･装飾", "雰囲気#音楽･ノイズ", "雰囲気#清潔感", "雰囲気#店内･席", "料理#見た目", "料理#分量", "料理#おすすめできるか", "料理#味", "立地#都心･繁華街にあるか", "立地#見つけやすいか", "立地#アクセスの良さ", "価格#コストパフォーマンス", "価格#割引について", "価格#水準", "サービス#接客", "サービス#駐車場の利便性", "サービス#入店までの待ち時間", "サービス#料理の提供時間"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-brand-store');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-group-store
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 - 東京都 平均',
+      data: [58, 94, 85, 42, 95, 83, 74, 90, 93, 72, 82, 84, 90, 79, 83, 68, 78, 92]
+    }, {
+      name: '全店舗平均',
+    data: [73, 74, 85, 71, 82, 91, 75, 83, 89, 73, 82, 74, 82, 89, 73, 88, 83, 72]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気#雰囲気･装飾", "雰囲気#音楽･ノイズ", "雰囲気#清潔感", "雰囲気#店内･席", "料理#見た目", "料理#分量", "料理#おすすめできるか", "料理#味", "立地#都心･繁華街にあるか", "立地#見つけやすいか", "立地#アクセスの良さ", "価格#コストパフォーマンス", "価格#割引について", "価格#水準", "サービス#接客", "サービス#駐車場の利便性", "サービス#入店までの待ち時間", "サービス#料理の提供時間"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-group-store');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-brand-store-qsc
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 ブランド平均',
+      data: [94, 60, 78]
+    }, {
+      name: '全店舗平均',
+      data: [90, 62, 74]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["Q:クオリティ", "S:サービス", "C:クレンリネス"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-brand-store-qsc');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-group-store-qsc
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 - 東京都 平均',
+      data: [94, 60, 78]
+    }, {
+      name: '全店舗平均',
+      data: [90, 62, 74]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["Q:クオリティ", "S:サービス", "C:クレンリネス"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-group-store-qsc');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-store-store-qsc
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 八丁堀店',
+      data: [94, 60, 78]
+    }, {
+      name: '全店舗平均',
+      data: [90, 62, 74]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["Q:クオリティ", "S:サービス", "C:クレンリネス"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-store-store-qsc');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-brand-store-category
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 ブランド平均',
+      data: [45, 115, 93, 54, 80, 79]
+    }, {
+      name: '全店舗平均',
+      data: [42, 110, 90, 50, 76, 82]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気", "料理", "立地", "価格", "サービス", "その他"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-brand-store-category');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-group-store-category
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 - 東京都 平均',
+      data: [45, 115, 93, 54, 80, 79]
+    }, {
+      name: '全店舗平均',
+      data: [42, 110, 90, 50, 76, 82]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気", "料理", "立地", "価格", "サービス", "その他"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-group-store-category');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-store-store-category
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 八丁堀店',
+      data: [45, 115, 93, 54, 80, 79]
+    }, {
+      name: '全店舗平均',
+      data: [42, 110, 90, 50, 76, 82]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気", "料理", "立地", "価格", "サービス", "その他"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true
+      }
+    },
+    grid: {
+      show: true,
+      strokeDashArray: 0,
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-store-store-category');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-group-store
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋- 東京都 平均',
+      data: [58, 94, 85, 42, 95, 83, 74, 90, 93, 72, 82, 84, 90, 79, 83, 68, 78, 92]
+    }, {
+      name: '全店舗平均',
+    data: [73, 74, 85, 71, 82, 91, 75, 83, 89, 73, 82, 74, 82, 89, 73, 88, 83, 72]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気#雰囲気･装飾", "雰囲気#音楽･ノイズ", "雰囲気#清潔感", "雰囲気#店内･席", "料理#見た目", "料理#分量", "料理#おすすめできるか", "料理#味", "立地#都心･繁華街にあるか", "立地#見つけやすいか", "立地#アクセスの良さ", "価格#コストパフォーマンス", "価格#割引について", "価格#水準", "サービス#接客", "サービス#駐車場の利便性", "サービス#入店までの待ち時間", "サービス#料理の提供時間"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: false
+      }
+    },
+    grid: {
+      show: false,
+      strokeDashArray: 0,
+      padding: {
+        top: -20,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-group-store');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-store-store
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋 八丁堀店',
+      data: [58, 94, 85, 42, 95, 83, 74, 90, 93, 72, 82, 84, 90, 79, 83, 68, 78, 92]
+    }, {
+      name: '全店舗平均',
+    data: [73, 74, 85, 71, 82, 91, 75, 83, 89, 73, 82, 74, 82, 89, 73, 88, 83, 72]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気#雰囲気･装飾", "雰囲気#音楽･ノイズ", "雰囲気#清潔感", "雰囲気#店内･席", "料理#見た目", "料理#分量", "料理#おすすめできるか", "料理#味", "立地#都心･繁華街にあるか", "立地#見つけやすいか", "立地#アクセスの良さ", "価格#コストパフォーマンス", "価格#割引について", "価格#水準", "サービス#接客", "サービス#駐車場の利便性", "サービス#入店までの待ち時間", "サービス#料理の提供時間"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: false
+      }
+    },
+    grid: {
+      show: false,
+      strokeDashArray: 0,
+      padding: {
+        top: -20,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-store-store');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
+
+// evaluation-score-group-brand
+
+(function() {
+  var options = {
+    series: [{
+      name: '牛鍋 吉田屋- 東京都 平均',
+      data: [58, 94, 85, 42, 95, 83, 74, 90, 93, 72, 82, 84, 90, 79, 83, 68, 78, 92]
+    }, {
+      name: '牛鍋 吉田屋 ブランド平均',
+    data: [73, 74, 85, 71, 82, 91, 75, 83, 89, 73, 82, 74, 82, 89, 73, 88, 83, 72]
+    }],
+    chart: {
+      type: 'bar',
+      height: '100%',
+      toolbar: {
+        show: false
+      },
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 2,
+        columnWidth: '75%'
+      }
+    },
+    colors: ['#FFA50E', 'rgba(154, 159, 165, .3)'],
+    dataLabels: {
+      enabled: false
+    },
+    legend: {
+        show: true,
+        position: 'top',
+        offsetY: 0
+    },
+    xaxis: {
+      categories: ["雰囲気#雰囲気･装飾", "雰囲気#音楽･ノイズ", "雰囲気#清潔感", "雰囲気#店内･席", "料理#見た目", "料理#分量", "料理#おすすめできるか", "料理#味", "立地#都心･繁華街にあるか", "立地#見つけやすいか", "立地#アクセスの良さ", "価格#コストパフォーマンス", "価格#割引について", "価格#水準", "サービス#接客", "サービス#駐車場の利便性", "サービス#入店までの待ち時間", "サービス#料理の提供時間"],
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        show: false
+      }
+    },
+    grid: {
+      show: false,
+      strokeDashArray: 0,
+      padding: {
+        top: -20,
+        right: 0,
+        bottom: 20,
+        left: 50
+      }
+    },
+    states: {
+      hover: {
+        filter: {
+          type: 'darken',
+          value: 0.6
+        }
+      }
+    },
+    tooltip: {
+      shared: true,
+      intersect: false
+    },
+    events: {
+      dataPointSelection: function(event, chartContext, config) {
+        console.log(config.dataPointIndex)
+      },
+    }
+  };
+  var chart = document.querySelector('#evaluation-score-group-brand');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})();
