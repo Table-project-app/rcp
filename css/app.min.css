@@ -6431,7 +6431,7 @@ body.dark .card {
 
 .card__chart_demography {
   margin-top: 10px;
-  height: 160px;
+  min-height: 120px;
   font-size: 8px !important;
   margin-bottom: 10px;
 }
