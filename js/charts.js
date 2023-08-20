@@ -3285,3 +3285,82 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     new ApexCharts(chart, options).render();
   }
 })();
+
+// recopo source
+
+(function () {
+  var options = {
+    series: [839, 81, 75, 12],
+    chart: {
+      type: 'donut',
+      height: '240',
+      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
+    },
+    legend: {
+      show: true,
+      onItemClick: {
+        toggleDataSeries: true
+      },
+    },
+    dataLabels: {
+      enabled: false
+    },
+    plotOptions: {
+      pie: {
+        donut: {
+          size: '54%',
+          labels: {
+            show: true,
+            name: {
+              show: true,
+              fontSize: '13px',
+              fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+              fontWeight: 600,
+            },
+            value: {
+              show: true,
+              fontSize: '24px',
+              fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+              offsetY: 2,
+              fontWeight: 800,
+            },
+            total: {
+              show: true,
+              showAlways: false,
+              label: '合計',
+              Color: '#6F767E',
+              fontSize: '12px',
+              fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+              fontWeight: 800,
+              formatter: function (w) {
+                return w.globals.seriesTotals.reduce((a, b) => {
+                  return a + b
+                }, 0)
+              }
+            }
+          }
+        }
+      }
+    },
+    responsive: [{
+      breakpoint: 480,
+      options: {
+        chart: {
+          height: 250
+        },
+        legend: {
+          position: 'bottom'
+        }
+      }
+    }],
+    labels: ['店舗', 'SNS', '口コミ', '天からの声'],
+    theme: {
+      palette: 'palette1'
+    },
+  };
+  var chart = document.querySelector('#recopo-source');
+
+  if (chart != null) {
+    new ApexCharts(chart, options).render();
+  }
+})(); 
