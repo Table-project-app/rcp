@@ -4400,7 +4400,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .button-stroke,
 .button-stroke-red {
   background: none;
-  box-shadow: 0 0 0 2px #EFEFEF inset;
+  box-shadow: 0 0 0 2px #e7e7e7 inset;
 }
 
 body.dark .button-stroke,
