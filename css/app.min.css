@@ -23748,6 +23748,10 @@ p {
   gap: 10px;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 @media only screen and (max-width: 767px) {
   
   .mobile-flex-column {
