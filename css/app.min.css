@@ -16376,7 +16376,7 @@ body.dark .message__content {
 }
 
 .customer__wrapper {
-  height: 600px;
+  max-height: 77vh;
   margin: 0 -12px;
 }
 
