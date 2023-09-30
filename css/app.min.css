@@ -4747,6 +4747,7 @@ body.dark .status-yellow {
 .balance.background.plus,
 .balance.background.minus,
 .balance.background.plus-re,
+.balance.background.neutral-re,
 .balance.background.minus-re {
   display: inline-flex;
   align-items: center;
@@ -4760,6 +4761,7 @@ body.dark .status-yellow {
 .balance.plus,
 .balance.minus,
 .balance.plus-re,
+.balance.neutral-re,
 .balance.minus-re svg {
   margin-right: 0px;
 }
@@ -4827,10 +4829,12 @@ body.dark .balance.minus svg {
   margin-right: 1px;
 }
 
+.balance.neutral-re,
 .balance.minus-re {
   color: #FCFCFC;
 }
 
+.balance.neutral-re svg,
 .balance.minus-re svg {
   fill: #FCFCFC;
   margin-right: 1px;
@@ -4841,6 +4845,7 @@ body.dark .balance.minus svg {
 .balance.background.plus,
 .balance.background.minus,
 .balance.background.plus-re,
+.balance.background.neutral-re,
 .balance.background.minus-re {
   height: 24px;
   padding: 0 8px 0 4px;
@@ -4866,6 +4871,10 @@ body.dark .balance.background.plus {
 
 body.dark .balance.background.minus {
   background: rgba(154, 159, 165, 0.1);
+}
+
+.balance.background.neutral-re {
+  background: var(--recopo-orange);
 }
 
 .balance.background.minus-re {
