@@ -4745,6 +4745,7 @@ body.dark .status-yellow {
 .balance.negative,
 .balance.positive,
 .balance.background.plus,
+.balance.background.neutral,
 .balance.background.minus,
 .balance.background.plus-re,
 .balance.background.neutral-re,
@@ -4759,6 +4760,7 @@ body.dark .status-yellow {
 .balance.negative svg,
 .balance.positive,
 .balance.plus,
+.balance.neutral,
 .balance.minus,
 .balance.plus-re,
 .balance.neutral-re,
@@ -4793,6 +4795,7 @@ body.dark .status-yellow {
   margin-right: 1px;
 }
 
+
 body.dark .balance.plus {
   color: var(--recopo-yellow);
 }
@@ -4801,6 +4804,25 @@ body.dark .balance.plus svg {
   fill: var(--recopo-yellow);
   margin-right: 1px;
 }
+
+.balance.neutral {
+  color: var(--recopo-gray-500);
+}
+
+.balance.neutral svg {
+  fill: var(--recopo-gray-500);
+  margin-right: 1px;
+}
+
+body.dark .balance.neutral {
+  color: var--recopo-gray-500);
+}
+
+body.dark .balance.neutral svg {
+  fill: var(--recopo-gray-500);
+  margin-right: 1px;
+}
+
 
 .balance.plus-re {
   color: #FCFCFC;
@@ -4812,20 +4834,20 @@ body.dark .balance.plus svg {
 }
 
 .balance.minus {
-  color: var(--recopo-gray-500);
+  color: var(--recopo-orange-1000);
 }
 
 .balance.minus svg {
-  fill: var(--recopo-gray-500);
+  fill: var(--recopo-orange-1000);
   margin-right: 1px;
 }
 
 body.dark .balance.minus {
-  color: var(--recopo-gray-500);
+  color: var(--recopo-orange-1000);
 }
 
 body.dark .balance.minus svg {
-  fill: var(--recopo-gray-500);
+  fill: var(--recopo-orange-1000);
   margin-right: 1px;
 }
 
@@ -4843,6 +4865,7 @@ body.dark .balance.minus svg {
 .balance.background.positive,
 .balance.background.negative,
 .balance.background.plus,
+.balance.background.neutral,
 .balance.background.minus,
 .balance.background.plus-re,
 .balance.background.neutral-re,
@@ -4865,20 +4888,28 @@ body.dark .balance.background.plus {
   background: var(--recopo-yellow);
 }
 
-.balance.background.minus {
+.balance.background.neutral {
   background: rgba(154, 159, 165, 0.1);
+}
+
+body.dark .balance.background.neutral {
+  background: rgba(154, 159, 165, 0.1);
+}
+
+.balance.background.minus {
+  background: rgba(195, 80, 27, 0.1);
 }
 
 body.dark .balance.background.minus {
-  background: rgba(154, 159, 165, 0.1);
+  background: rgba(195, 80, 27, 0.1);
 }
 
 .balance.background.neutral-re {
-  background: var(--recopo-orange);
+  background: var(--recopo-gray-500);
 }
 
 .balance.background.minus-re {
-  background: var(--recopo-gray-500);
+  background: var(--recopo-orange-1000);
 }
 
 .balance.background.positive {
