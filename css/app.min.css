@@ -4787,21 +4787,21 @@ body.dark .status-yellow {
 }
 
 .balance.plus {
-  color: var(--recopo-yellow);
+  color: var(--recopo-green);
 }
 
 .balance.plus svg {
-  fill: var(--recopo-yellow);
+  fill: var(--recopo-green);
   margin-right: 1px;
 }
 
 
 body.dark .balance.plus {
-  color: var(--recopo-yellow);
+  color: var(--recopo-green);
 }
 
 body.dark .balance.plus svg {
-  fill: var(--recopo-yellow);
+  fill: var(--recopo-green);
   margin-right: 1px;
 }
 
@@ -4834,20 +4834,20 @@ body.dark .balance.neutral svg {
 }
 
 .balance.minus {
-  color: var(--recopo-orange-1000);
+  color: var(--recopo-pink);
 }
 
 .balance.minus svg {
-  fill: var(--recopo-orange-1000);
+  fill: var(--recopo-pink);
   margin-right: 1px;
 }
 
 body.dark .balance.minus {
-  color: var(--recopo-orange-1000);
+  color: var(--recopo-pink);
 }
 
 body.dark .balance.minus svg {
-  fill: var(--recopo-orange-1000);
+  fill: var(--recopo-pink);
   margin-right: 1px;
 }
 
@@ -4877,15 +4877,15 @@ body.dark .balance.minus svg {
 }
 
 .balance.background.plus {
-  background: rgba(255, 165, 14, 0.1);
+  background: rgba(16, 194, 104, 0.1);
 }
 
 body.dark .balance.background.plus {
-  background: rgba(255, 165, 14, 0.1);
+  background: rgba(16, 194, 104, 0.1);
 }
 
 .balance.background.plus-re {
-  background: var(--recopo-yellow);
+  background: var(--recopo-green);
 }
 
 .balance.background.neutral {
@@ -4897,11 +4897,11 @@ body.dark .balance.background.neutral {
 }
 
 .balance.background.minus {
-  background: rgba(195, 80, 27, 0.1);
+  background: rgba(255, 80, 124, 0.1);
 }
 
 body.dark .balance.background.minus {
-  background: rgba(195, 80, 27, 0.1);
+  background: rgba(255, 80, 124, 0.1);
 }
 
 .balance.background.neutral-re {
@@ -4909,7 +4909,7 @@ body.dark .balance.background.minus {
 }
 
 .balance.background.minus-re {
-  background: var(--recopo-orange-1000);
+  background: var(--recopo-pink);
 }
 
 .balance.background.positive {
