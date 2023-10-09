@@ -21,7 +21,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       toolbar: {
         show: false
       },
-      fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif'
     },
     plotOptions: {
       bar: {
@@ -43,11 +42,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+      hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -125,11 +141,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.85em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -208,11 +241,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.85em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -297,6 +347,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -362,6 +434,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     tooltip: {
@@ -431,6 +525,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+      style: {
+        fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+        fontWeight: 500,
+        fontSize: "0.8em",
+        colors: '#7E8299'
+      }
       }
     },
     tooltip: {
@@ -500,6 +616,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+      }
       }
     },
     tooltip: {
@@ -566,6 +704,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+      style: {
+        fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+        fontWeight: 500,
+        fontSize: "0.8em",
+        colors: '#7E8299'
+      }
       }
     },
     events: {
@@ -631,6 +791,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+      style: {
+        fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+        fontWeight: 500,
+        fontSize: "0.8em",
+        colors: '#7E8299'
+      }
       }
     },
     events: {
@@ -696,6 +878,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+      style: {
+        fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+        fontWeight: 500,
+        fontSize: "0.8em",
+        colors: '#7E8299'
+      }
       }
     },
     events: {
@@ -761,6 +965,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -823,6 +1049,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -888,6 +1136,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -953,6 +1223,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -1018,6 +1310,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -1083,6 +1397,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -1504,6 +1840,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -1585,6 +1943,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -1666,6 +2046,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -1756,6 +2158,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -1846,6 +2270,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -1936,6 +2382,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -2026,6 +2494,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       tooltip: {
         enabled: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+      show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     events: {
@@ -2082,11 +2572,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2165,11 +2672,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: false
+        show: false,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2248,11 +2772,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: false
+        show: false,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2331,11 +2872,29 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
+
     },
     yaxis: {
       labels: {
-        show: false
+        show: false,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2414,11 +2973,29 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
+
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2497,11 +3074,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2580,11 +3174,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2663,11 +3274,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2746,11 +3374,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2829,11 +3474,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2912,11 +3574,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -2995,11 +3674,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.9em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: true
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -3078,11 +3774,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: false
+        show: false,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -3161,11 +3874,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: false
+        show: false,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
@@ -3244,11 +3974,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       },
       axisTicks: {
         show: false
+      },
+      labels: {
+        show: true,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.7em",
+          colors: '#7E8299'
+        }
       }
     },
     yaxis: {
       labels: {
-        show: false
+        show: false,
+        hideOverlappingLabels: true,
+        style: {
+          fontFamily: 'MADEOkineSans, Noto Sans Japanese, Sans-Serif',
+          fontWeight: 500,
+          fontSize: "0.8em",
+          colors: '#7E8299'
+        }
       }
     },
     grid: {
