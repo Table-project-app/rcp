@@ -21941,7 +21941,7 @@ body.dark .types__row:not(:first-child) .types__col:after {
   font-size: 13px;
   display: -webkit-box;
   overflow: hidden;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   font-weight: 700;
 }
@@ -21962,7 +21962,7 @@ body.dark .types__row:not(:first-child) .types__col:after {
   }
   
   .qs__comment {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1;
   }
 }
 
