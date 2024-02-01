@@ -21902,6 +21902,7 @@ body.dark .types__row:not(:first-child) .types__col:after {
 }
 
 .qs__item {
+  display: flex;
   align-items: center;
 }
 
