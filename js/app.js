@@ -552,7 +552,9 @@ $('.summary .checkbox__input').on('change', function() {
         }
       });
 
-      _this.data('dateRangePicker').setStart('2023-04-10');
+      var today = new Date();
+      var formattedToday = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
+      _this.data('dateRangePicker').setStart(formattedToday);
 
       clear.on('click', function() {
         _this.data('dateRangePicker').setStart(new Date());
@@ -598,7 +600,9 @@ $('.summary .checkbox__input').on('change', function() {
         }
       });
 
-      _this.data('dateRangePicker').setStart('2023-04-10');
+      var today = new Date();
+      var formattedToday = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
+      _this.data('dateRangePicker').setStart(formattedToday);
 
       clear.on('click', function() {
         _this.data('dateRangePicker').setStart(new Date());

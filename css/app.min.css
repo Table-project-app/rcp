@@ -9109,6 +9109,10 @@ body.dark .popup__wrap {
   max-width: 696px;
 }
 
+.popup.popup_schedule .popup__wrap {
+  max-width: 408px;
+}
+
 .popup__close {
   position: absolute;
   top: 24px;
@@ -14762,7 +14766,7 @@ body.dark .calendar__head:hover {
 .calendar__category {
   font-size: 12px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.4;
   color: #6F767E;
 }
 
@@ -14774,7 +14778,7 @@ body.dark .calendar__head:hover {
   box-shadow: none;
   pointer-events: none;
   font-family: var(--recopo-font-sans-serif);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   color: #1A1D1F;
 }
@@ -14870,7 +14874,7 @@ body.dark .calendar__body {
 
 .calendar__time li {
   padding: 0 12px;
-  border-radius: 4px;
+  border-radius: 8px;
   line-height: 40px;
   color: #6F767E;
   cursor: pointer;
@@ -15060,7 +15064,7 @@ body.dark .date-picker-wrapper {
   align-items: center;
   height: 100%;
   flex: 1;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .date-picker-wrapper .month-wrapper table thead tr:first-child {
