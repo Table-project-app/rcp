@@ -348,75 +348,75 @@
         </a>
         <a class="sidebar__item" href="brands.html">
           <svg class="icon icon-flag">
-          <use xlink:href="#icon-flag"></use>
+            <use xlink:href="#icon-flag"></use>
           </svg>
           ブランド一覧
         </a>
         <a class="sidebar__item" href="groups.html">
           <svg class="icon icon-category">
-          <use xlink:href="#icon-category"></use>
+            <use xlink:href="#icon-category"></use>
           </svg>
           店舗グループ一覧
         </a>
         <a class="sidebar__item" href="stores.html">
           <svg class="icon icon-store">
-          <use xlink:href="#icon-store"></use>
+            <use xlink:href="#icon-store"></use>
           </svg>
           店舗一覧
         </a>
         <div class="sidebar__item sidebar__item_dropdown">
           <button class="sidebar__head">
-          <svg class="icon icon-setting">
-            <use xlink:href="#icon-setting"></use>
-          </svg>
-          設定
-          <svg class="icon icon-arrow-down">
-            <use xlink:href="#icon-arrow-down"></use>
-          </svg>
+            <svg class="icon icon-setting">
+              <use xlink:href="#icon-setting"></use>
+            </svg>
+            設定
+            <svg class="icon icon-arrow-down">
+              <use xlink:href="#icon-arrow-down"></use>
+            </svg>
           </button>
           <div class="sidebar__body">
-          <a class="sidebar__link" href="setting-brand.html">
-            ブランド設定
-            <svg class="icon icon-arrow-next">
-            <use xlink:href="#icon-arrow-next"></use>
-            </svg>
-          </a>
-         <a class="sidebar__link" href="setting-type.html">
-            店舗グループタイプ設定
-            <svg class="icon icon-arrow-next">
-            <use xlink:href="#icon-arrow-next"></use>
-            </svg>
-          </a>
-          <a class="sidebar__link" href="setting-group.html">
-            店舗グループ設定
-            <svg class="icon icon-arrow-next">
-            <use xlink:href="#icon-arrow-next"></use>
-            </svg>
-          </a>
-          <a class="sidebar__link" href="members.html">
-            メンバー設定
-            <svg class="icon icon-arrow-next">
-            <use xlink:href="#icon-arrow-next"></use>
-            </svg>
-          </a>
-          <a class="sidebar__link" href="setting-raffle.html">
-            抽選設定
-            <svg class="icon icon-arrow-next">
-            <use xlink:href="#icon-arrow-next"></use>
-            </svg>
-          </a>
-          <a class="sidebar__link" href="setting-q.html">
-            アンケート設定
-            <svg class="icon icon-arrow-next">
-            <use xlink:href="#icon-arrow-next"></use>
-            </svg>
-          </a>
-          <a class="sidebar__link" href="setting-keyword.html">
-            キーワード設定
-            <svg class="icon icon-arrow-next">
-            <use xlink:href="#icon-arrow-next"></use>
-            </svg>
-          </a>
+            <a class="sidebar__link" href="setting-brand.html">
+              ブランド設定
+              <svg class="icon icon-arrow-next">
+                <use xlink:href="#icon-arrow-next"></use>
+              </svg>
+            </a>
+            <a class="sidebar__link" href="setting-type.html">
+              店舗グループタイプ設定
+              <svg class="icon icon-arrow-next">
+                <use xlink:href="#icon-arrow-next"></use>
+              </svg>
+            </a>
+            <a class="sidebar__link" href="setting-group.html">
+              店舗グループ設定
+              <svg class="icon icon-arrow-next">
+                <use xlink:href="#icon-arrow-next"></use>
+              </svg>
+            </a>
+            <a class="sidebar__link" href="members.html">
+              メンバー設定
+              <svg class="icon icon-arrow-next">
+                <use xlink:href="#icon-arrow-next"></use>
+              </svg>
+            </a>
+            <a class="sidebar__link" href="setting-raffle.html">
+              抽選設定
+              <svg class="icon icon-arrow-next">
+                <use xlink:href="#icon-arrow-next"></use>
+              </svg>
+            </a>
+            <a class="sidebar__link" href="setting-q.html">
+              アンケート設定
+              <svg class="icon icon-arrow-next">
+                <use xlink:href="#icon-arrow-next"></use>
+              </svg>
+            </a>
+            <a class="sidebar__link" href="setting-keyword.html">
+              キーワード設定
+              <svg class="icon icon-arrow-next">
+                <use xlink:href="#icon-arrow-next"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -518,40 +518,97 @@
         <div class="products card">
           <div class="products__head">
             <div class="title-purple products__title">アンケート設問</div>
-            <a class="button-stroke button-small card__button" href="scores.html">
-            <svg class="icon icon-arrow-left">
-              <use xlink:href="#icon-arrow-left"></use>
-            </svg><span>戻る</span></a>
+            <div class="panel__btns">
+              <a class="button-stroke button-small panel__button" href="scores.html">
+                <svg class="icon icon-arrow-left">
+                  <use xlink:href="#icon-arrow-left"></use>
+                </svg><span>戻る</span>
+              </a>
+              <a class="button-stroke button-small panel__button" href="#">
+                <span>プレビュー</span>
+                <svg class="icon icon-mobile">
+                  <use xlink:href="#icon-mobile"></use>
+                </svg>
+              </a>
+            </div>
           </div>
           <div id="form_repeater_raffle">
             <div class="form-group">
               <div data-repeater-list="form_repeater_raffle">
                 <div data-repeater-item class="mb-32">
                   <div class="row">
-                    <div class="field">
-                      <div class="field__label">設問表示文言
-                        <div class="tooltip required" title="お客さまにも表示される設問内容です。1-5段階で評価選択されます。">
-                          <svg class="icon icon-info">
-                            <use xlink:href="#icon-info"></use>
-                          </svg>
+                    <div class="preset">
+                      <div class="preset__wrapper">
+                        <div class="field">
+                          <div class="field__label">設問プリセット
+                            <div class="tooltip" title="プリセットを元にカスタマイズが可能です">
+                              <svg class="icon icon-info">
+                              <use xlink:href="#icon-info"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="field__wrap">
+                            <select class="mobile-hide select" required>
+                              <option data-display="設問プリセットを選択してください"></option>
+                              <option>電話対応</option>
+                              <option>メール対応</option>
+                              <option>問い合わせ</option>
+                              <option>FAX対応</option>
+                              <option>手紙対応</option>
+                              <option>チャット対応</option>
+                              <option selected>提供スピード</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="field__label">設問表示文言
+                            <div class="tooltip" title="お客さまにも表示される設問内容です。">
+                              <svg class="icon icon-info">
+                                <use xlink:href="#icon-info"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="field__wrap">
+                            <input class="field__input" type="text" name="title" placeholder="お客さまにも表示される設問内容です" value="注文から提供までの時間はいかがでしたか？" required>
+                          </div>
+                        </div>
+                      </div>  
+                      <div class="settings__menu">
+                        <div class="field">
+                          <div class="field__label">回答形式
+                            <div class="tooltip" title="設問への回答形式を選択してください">
+                              <svg class="icon icon-info">
+                              <use xlink:href="#icon-info"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="field__wrap">
+                            <select class="mobile-hide select" required>
+                              <option data-display="回答形式を選択してください"></option>
+                              <option>ラジオボタン</option>
+                              <option>記述式</option>
+                              <option>5段階</option>
+                              <option selected>10段階</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="field__label">必須
+                            <div class="tooltip" title="設問への回答が必須の場合はオンにしてください">
+                              <svg class="icon icon-info">
+                              <use xlink:href="#icon-info"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="field__wrap">
+                            <label class="switch">
+                              <input class="switch__input" type="checkbox" checked="checked"/><span class="switch__inner"><span class="switch__box"></span></span>
+                            </label>
+                          </div>
                         </div>
                       </div>
-                      <div class="field__wrap">
-                        <input class="field__input" type="text" name="title" placeholder="お客さまにも表示される設問内容です" value="注文から提供までの時間はいかがでしたか？" required>
-                      </div>
-                    </div>
-                    <div class="field">
-                      <div class="field__label">設問概要
-                        <div class="tooltip required" title="内部分析用の設問概要ラベルです。お客さまには表示されません。">
-                          <svg class="icon icon-info">
-                            <use xlink:href="#icon-info"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="field__wrap">
-                        <input class="field__input" type="text" name="title" placeholder="内部分析用の設問概要です。お客さまには表示されません。" value="提供スピード" required>
-                      </div>
-                    </div>
+                    </div>  
+                    
                     <div class="mt-32">
                       <a href="javascript:;" data-repeater-delete class="button-stroke-red panel__button">
                         削除
@@ -647,18 +704,27 @@
           </div>
         </div>
         <div class="panel">
+          <div class="panel__info">
+            <svg class="icon icon-check-all">
+              <use xlink:href="#icon-check-all"></use>
+            </svg>
+            最終更新日時: 
+            <span>2024/02/23 12:00</span>
+          </div>
           <div class="panel__btns">
             <button class="button-stroke-red panel__button"><span>カスタムアンケートを削除</span>
               <svg class="icon icon-trash">
                 <use xlink:href="#icon-trash"></use>
               </svg>
             </button>
+            <button class="button-stroke-gray panel__button" data-popup=".js-popup-schedule"><span>下書き保存</span>
+            </button>
             <button class="button-stroke panel__button" data-popup=".js-popup-schedule"><span>反映日時設定</span>
               <svg class="icon icon-calendar">
                 <use xlink:href="#icon-calendar"></use>
               </svg>
             </button>
-            <button class="button panel__button">保存･即時反映</button>
+            <button class="button panel__button">更新･即時反映</button>
           </div>
         </div>
       </div>
@@ -803,10 +869,10 @@
         $(this).slideDown();
       },
 
-      hide: function (deleteElement) {
-          if(confirm('この設問を削除してもよろしいですか?')) {
-              $(this).slideUp(deleteElement);
-          }
+      hide: function(deleteElement) {
+        if (confirm('この設問を削除してもよろしいですか?')) {
+          $(this).slideUp(deleteElement);
+        }
       },
 
     });
@@ -1093,12 +1159,12 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 8V5.33333C10.6667 4.22876 9.77128 3.33333 8.66671 3.33333H7.33337C6.2288 3.33333 5.33337 4.22876 5.33337 5.33333V6.66667H3.33337C2.2288 6.66667 1.33337 7.5621 1.33337 8.66667V12C1.33337 12.3682 1.63185 12.6667 2.00004 12.6667H14C14.3682 12.6667 14.6667 12.3682 14.6667 12V10C14.6667 8.89543 13.7713 8 12.6667 8H10.6667ZM8.66671 4.66667H7.33337C6.96518 4.66667 6.66671 4.96514 6.66671 5.33333V11.3333H9.33337V5.33333C9.33337 4.96514 9.0349 4.66667 8.66671 4.66667ZM10.6667 9.33333V11.3333H13.3334V10C13.3334 9.63181 13.0349 9.33333 12.6667 9.33333H10.6667ZM3.33337 8H5.33337V11.3333H2.66671V8.66667C2.66671 8.29848 2.96518 8 3.33337 8Z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-flag">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33333 1.99999C3.33333 1.63181 3.03486 1.33333 2.66667 1.33333C2.29848 1.33333 2 1.63181 2 1.99999V14C2 14.3682 2.29848 14.6667 2.66667 14.6667C3.03486 14.6667 3.33333 14.3682 3.33333 14V10H6.68422C7.11415 10 7.54127 10.0693 7.94913 10.2053L8.71753 10.4614C9.1254 10.5974 9.55252 10.6667 9.98244 10.6667H12C13.1046 10.6667 14 9.77123 14 8.66666V4.66666C14 3.56209 13.1046 2.66666 12 2.66666H9.98244C9.55252 2.66666 9.1254 2.59735 8.71753 2.46139L7.94913 2.20526C7.54127 2.06931 7.11415 1.99999 6.68422 1.99999H3.33333ZM3.33333 3.33333V8.66666H6.68422C7.25746 8.66666 7.82695 8.75908 8.37077 8.94035L9.13917 9.19648C9.41108 9.28712 9.69583 9.33333 9.98244 9.33333H12C12.3682 9.33333 12.6667 9.03485 12.6667 8.66666V4.66666C12.6667 4.29847 12.3682 3.99999 12 3.99999H9.98244C9.40921 3.99999 8.83972 3.90758 8.2959 3.72631L7.5275 3.47017C7.25559 3.37954 6.97084 3.33333 6.68422 3.33333H3.33333Z"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33333 1.99999C3.33333 1.63181 3.03486 1.33333 2.66667 1.33333C2.29848 1.33333 2 1.63181 2 1.99999V14C2 14.3682 2.29848 14.6667 2.66667 14.6667C3.03486 14.6667 3.33333 14.3682 3.33333 14V10H6.68422C7.11415 10 7.54127 10.0693 7.94913 10.2053L8.71753 10.4614C9.1254 10.5974 9.55252 10.6667 9.98244 10.6667H12C13.1046 10.6667 14 9.77123 14 8.66666V4.66666C14 3.56209 13.1046 2.66666 12 2.66666H9.98244C9.55252 2.66666 9.1254 2.59735 8.71753 2.46139L7.94913 2.20526C7.54127 2.06931 7.11415 1.99999 6.68422 1.99999H3.33333ZM3.33333 3.33333V8.66666H6.68422C7.25746 8.66666 7.82695 8.75908 8.37077 8.94035L9.13917 9.19648C9.41108 9.28712 9.69583 9.33333 9.98244 9.33333H12C12.3682 9.33333 12.6667 9.03485 12.6667 8.66666V4.66666C12.6667 4.29847 12.3682 3.99999 12 3.99999H9.98244C9.40921 3.99999 8.83972 3.90758 8.2959 3.72631L7.5275 3.47017C7.25559 3.37954 6.97084 3.33333 6.68422 3.33333H3.33333Z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-layers">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68343 3.45791C8.24191 3.29736 7.75797 3.29736 7.31646 3.45791L2.61739 5.16666L7.31646 6.87542C7.75797 7.03597 8.24191 7.03597 8.68343 6.87542L13.3825 5.16666L8.68343 3.45791ZM6.8608 2.20485C7.59666 1.93727 8.40323 1.93727 9.13909 2.20485L13.8382 3.91361C15.0084 4.33915 15.0084 5.99418 13.8382 6.41972L9.13909 8.12847C8.40323 8.39606 7.59666 8.39606 6.8608 8.12847L2.16173 6.41972C0.991495 5.99418 0.991503 4.33914 2.16173 3.91361L6.8608 2.20485Z" />
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 8.26332C1.49518 7.9164 1.8764 7.73517 2.22332 7.85851L7.5533 9.75362C7.84223 9.85635 8.15773 9.85635 8.44666 9.75362L13.7766 7.85851C14.1236 7.73517 14.5048 7.9164 14.6281 8.26332C14.7515 8.61023 14.5702 8.99145 14.2233 9.1148L8.89334 11.0099C8.31548 11.2154 7.68447 11.2154 7.10662 11.0099L1.77664 9.1148C1.42972 8.99145 1.24849 8.61023 1.37184 8.26332Z" />
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 11.0967C1.49518 10.7497 1.8764 10.5685 2.22332 10.6919L7.5533 12.587C7.84223 12.6897 8.15773 12.6897 8.44666 12.587L13.7766 10.6919C14.1236 10.5685 14.5048 10.7497 14.6281 11.0967C14.7515 11.4436 14.5702 11.8248 14.2233 11.9481L8.89334 13.8432C8.31548 14.0487 7.68447 14.0487 7.10662 13.8432L1.77664 11.9481C1.42972 11.8248 1.24849 11.4436 1.37184 11.0967Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68343 3.45791C8.24191 3.29736 7.75797 3.29736 7.31646 3.45791L2.61739 5.16666L7.31646 6.87542C7.75797 7.03597 8.24191 7.03597 8.68343 6.87542L13.3825 5.16666L8.68343 3.45791ZM6.8608 2.20485C7.59666 1.93727 8.40323 1.93727 9.13909 2.20485L13.8382 3.91361C15.0084 4.33915 15.0084 5.99418 13.8382 6.41972L9.13909 8.12847C8.40323 8.39606 7.59666 8.39606 6.8608 8.12847L2.16173 6.41972C0.991495 5.99418 0.991503 4.33914 2.16173 3.91361L6.8608 2.20485Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 8.26332C1.49518 7.9164 1.8764 7.73517 2.22332 7.85851L7.5533 9.75362C7.84223 9.85635 8.15773 9.85635 8.44666 9.75362L13.7766 7.85851C14.1236 7.73517 14.5048 7.9164 14.6281 8.26332C14.7515 8.61023 14.5702 8.99145 14.2233 9.1148L8.89334 11.0099C8.31548 11.2154 7.68447 11.2154 7.10662 11.0099L1.77664 9.1148C1.42972 8.99145 1.24849 8.61023 1.37184 8.26332Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 11.0967C1.49518 10.7497 1.8764 10.5685 2.22332 10.6919L7.5533 12.587C7.84223 12.6897 8.15773 12.6897 8.44666 12.587L13.7766 10.6919C14.1236 10.5685 14.5048 10.7497 14.6281 11.0967C14.7515 11.4436 14.5702 11.8248 14.2233 11.9481L8.89334 13.8432C8.31548 14.0487 7.68447 14.0487 7.10662 13.8432L1.77664 11.9481C1.42972 11.8248 1.24849 11.4436 1.37184 11.0967Z" />
       </symbol>
 
     </svg>

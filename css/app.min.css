@@ -4398,7 +4398,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .button-stroke,
-.button-stroke-red {
+.button-stroke-red,
+.button-stroke-gray {
   background: none;
   box-shadow: 0 0 0 2px #e7e7e7 inset;
 }
@@ -4467,6 +4468,26 @@ body.dark .button-stroke:hover svg {
 
 .button-stroke-red:hover svg,
 .button-stroke-red.active svg {
+  fill: #FCFCFC;
+}
+
+.button-stroke-gray {
+  color: var(--recopo-gray-dark);
+}
+
+.button-stroke-gray svg {
+  fill: var(--recopo-gray-dark);
+}
+
+.button-stroke-gray:hover,
+.button-stroke-gray.active {
+  background: var(--recopo-gray-dark);
+  box-shadow: 0 0 0 2px var(--recopo-gray-dark) inset;
+  color: #FCFCFC;
+}
+
+.button-stroke-gray:hover svg,
+.button-stroke-gray.active svg {
   fill: #FCFCFC;
 }
 
@@ -18762,6 +18783,29 @@ body.dark .settings {
   background: #1A1D1F;
 }
 
+.preset {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  background: #FCFCFC;
+}
+
+@media only screen and (max-width: 1023px) {
+  .preset {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .preset {
+    padding: 24px 16px;
+  }
+}
+
+body.dark .preset {
+  background: #1A1D1F;
+}
+
 .settings__menu {
   position: sticky;
   top: 116px;
@@ -18779,6 +18823,25 @@ body.dark .settings {
 
 @media only screen and (max-width: 1023px) {
   .settings__menu {
+    display: none;
+  }
+}
+
+.preset__menu {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 280px;
+}
+
+@media only screen and (max-width: 1259px) {
+  .preset__menu {
+    width: 210px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .preset__menu {
     display: none;
   }
 }
@@ -18856,6 +18919,50 @@ body.dark .settings__link.active {
 }
 
 body.dark .settings__wrapper>.select {
+  background: #272B30;
+  box-shadow: 0 0 0 #272B30 inset;
+}
+
+.preset__wrapper {
+  flex-grow: 1;
+  padding-right: 32px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .preset__wrapper {
+    padding-left: 0;
+  }
+}
+
+.preset__wrapper>.preset__button {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .preset__wrapper>.preset__button {
+    margin-top: 32px;
+  }
+}
+
+.preset__wrapper>.select {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .preset__wrapper>.select {
+    display: block;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .preset__wrapper>.select {
+    margin-bottom: 24px;
+  }
+}
+
+body.dark .preset__wrapper>.select {
   background: #272B30;
   box-shadow: 0 0 0 #272B30 inset;
 }
