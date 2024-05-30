@@ -54,6 +54,7 @@
     height: 20px;
     vertical-align: bottom;
     font-family: sans-serif;
+    font-weight: 500;
     overflow: hidden;
     word-break: keep-all; }
     .select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
