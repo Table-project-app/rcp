@@ -195,7 +195,7 @@
 .select2-container--default .select2-selection--multiple {
   background-color: #F4F4F4;
   border: none;
-  border-radius: 6px;
+  border-radius: 12px;
   cursor: text;
   padding: 8px 4px;
   position: relative; }

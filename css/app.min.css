@@ -3794,13 +3794,13 @@ body.dark .select .option.selected {
 .select_small {
   height: 40px;
   padding: 0 40px 0 16px;
-  line-height: 42px;
+  line-height: 40px;
 }
 
 @media only screen and (max-width: 767px) {
   .select_small {
     margin: 0 0px 4px 0;
-    line-height: 42px;
+    line-height: 40px;
   }
 }
 
