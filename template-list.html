@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>カスタムアンケート - Recopoダッシュボード</title>
+  <title>カスタムアンケート一覧 - カスタムアンケートスコア - Recopoダッシュボード</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
@@ -16,6 +16,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" media="all" href="css/webfonts/custom.css">
   <link rel="stylesheet" media="all" href="css/app.min.css">
+  <link rel="stylesheet" media="all" href="css/select2.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-noto.min.css">
   <script>
     var viewportmeta = document.querySelector('meta[name="viewport"]');
@@ -51,7 +52,7 @@
       <select class="mobile-hide select mr-16">
         <option>吉田ダイニンググループ</option>
         <option>吉本屋フーズ</option>
-        <option>Lucky Diners Group</option>
+        <option>Lucky Dining Group</option>
       </select>
       <div class="search">
         <div class="search__head">
@@ -348,75 +349,75 @@
         </a>
         <a class="sidebar__item" href="brands.html">
           <svg class="icon icon-flag">
-            <use xlink:href="#icon-flag"></use>
+          <use xlink:href="#icon-flag"></use>
           </svg>
           ブランド一覧
         </a>
         <a class="sidebar__item" href="groups.html">
           <svg class="icon icon-category">
-            <use xlink:href="#icon-category"></use>
+          <use xlink:href="#icon-category"></use>
           </svg>
           店舗グループ一覧
         </a>
         <a class="sidebar__item" href="stores.html">
           <svg class="icon icon-store">
-            <use xlink:href="#icon-store"></use>
+          <use xlink:href="#icon-store"></use>
           </svg>
           店舗一覧
         </a>
         <div class="sidebar__item sidebar__item_dropdown">
           <button class="sidebar__head">
-            <svg class="icon icon-setting">
-              <use xlink:href="#icon-setting"></use>
-            </svg>
-            設定
-            <svg class="icon icon-arrow-down">
-              <use xlink:href="#icon-arrow-down"></use>
-            </svg>
+          <svg class="icon icon-setting">
+            <use xlink:href="#icon-setting"></use>
+          </svg>
+          設定
+          <svg class="icon icon-arrow-down">
+            <use xlink:href="#icon-arrow-down"></use>
+          </svg>
           </button>
           <div class="sidebar__body">
-            <a class="sidebar__link" href="setting-brand.html">
-              ブランド設定
-              <svg class="icon icon-arrow-next">
-                <use xlink:href="#icon-arrow-next"></use>
-              </svg>
-            </a>
-            <a class="sidebar__link" href="setting-type.html">
-              店舗グループタイプ設定
-              <svg class="icon icon-arrow-next">
-                <use xlink:href="#icon-arrow-next"></use>
-              </svg>
-            </a>
-            <a class="sidebar__link" href="setting-group.html">
-              店舗グループ設定
-              <svg class="icon icon-arrow-next">
-                <use xlink:href="#icon-arrow-next"></use>
-              </svg>
-            </a>
-            <a class="sidebar__link" href="members.html">
-              メンバー設定
-              <svg class="icon icon-arrow-next">
-                <use xlink:href="#icon-arrow-next"></use>
-              </svg>
-            </a>
-            <a class="sidebar__link" href="setting-raffle.html">
-              抽選設定
-              <svg class="icon icon-arrow-next">
-                <use xlink:href="#icon-arrow-next"></use>
-              </svg>
-            </a>
-            <a class="sidebar__link" href="setting-q.html">
-              アンケート設定
-              <svg class="icon icon-arrow-next">
-                <use xlink:href="#icon-arrow-next"></use>
-              </svg>
-            </a>
-            <a class="sidebar__link" href="setting-keyword.html">
-              キーワード設定
-              <svg class="icon icon-arrow-next">
-                <use xlink:href="#icon-arrow-next"></use>
-              </svg>
-            </a>
+          <a class="sidebar__link" href="setting-brand.html">
+            ブランド設定
+            <svg class="icon icon-arrow-next">
+            <use xlink:href="#icon-arrow-next"></use>
+            </svg>
+          </a>
+         <a class="sidebar__link" href="setting-type.html">
+            店舗グループタイプ設定
+            <svg class="icon icon-arrow-next">
+            <use xlink:href="#icon-arrow-next"></use>
+            </svg>
+          </a>
+          <a class="sidebar__link" href="setting-group.html">
+            店舗グループ設定
+            <svg class="icon icon-arrow-next">
+            <use xlink:href="#icon-arrow-next"></use>
+            </svg>
+          </a>
+          <a class="sidebar__link" href="members.html">
+            メンバー設定
+            <svg class="icon icon-arrow-next">
+            <use xlink:href="#icon-arrow-next"></use>
+            </svg>
+          </a>
+          <a class="sidebar__link" href="setting-raffle.html">
+            抽選設定
+            <svg class="icon icon-arrow-next">
+            <use xlink:href="#icon-arrow-next"></use>
+            </svg>
+          </a>
+          <a class="sidebar__link" href="setting-q.html">
+            アンケート設定
+            <svg class="icon icon-arrow-next">
+            <use xlink:href="#icon-arrow-next"></use>
+            </svg>
+          </a>
+          <a class="sidebar__link" href="setting-keyword.html">
+            キーワード設定
+            <svg class="icon icon-arrow-next">
+            <use xlink:href="#icon-arrow-next"></use>
+            </svg>
+          </a>
           </div>
         </div>
       </div>
@@ -500,597 +501,300 @@
     <div class="overlay"></div>
     <!-- inner-->
     <div class="page__inner">
-      <div class="page__container js-tabs">
-        <div class="page__head align-items-center mobile-flex-column">
-          <div class="page__title h3 mr-auto">
-            <svg class="icon icon-leaderboard">
-              <use xlink:href="#icon-leaderboard"></use>
-            </svg>
-            <div class="h3">カスタムアンケート</div>
+      <div class="page__container">
+        <div class="page__title h3">
+          <svg class="icon icon-leaderboard">
+            <use xlink:href="#icon-leaderboard"></use>
+          </svg>
+          <div class="h3">カスタムアンケートスコア</div>
+          <div class="store__info">
+            <a href="scores.html">カスタムアンケートスコア</a>
           </div>
-          <div class="page__action d-flex mobile-w-100">
-            <a class="button-small card__button button-stroke mobile-hide mr-16" href="template-list.html">
-              <svg class="icon icon-edit">
-                <use xlink:href="#icon-edit"></use>
-              </svg>
-              <span>カスタムアンケート設定</span>
-            </a>
-            <button class="products__link js-tabs-link active">スコア</button>
-            <button class="products__link js-tabs-link">回答内容</button>
+          <div class="store__subinfo">
+            <svg class="icon icon-chevron-forward">
+              <use xlink:href="#icon-chevron-forward"></use>
+            </svg>カスタムアンケート一覧
           </div>
         </div>
-        <div class="refunds customer card js-tabs-item">
-        </div>
-        <div class="refunds customer card js-tabs-item">
-          <div class="card__head">
-            <div class="title-purple card__title">カスタムアンケートスコア</div>
-            <div class="card__select ml-auto">
-              <select class="select select_small" id="brand" onchange="viewChange();">
-                <option selected value="All">全ブランド</option>
-                <option value="Yoshidaya">牛鍋 吉田屋</option>
-                <option value="Mankichi">万吉スープカレー</option>
-              </select>
-            </div>
-            <div class="card__select ml-8" id="BrandYoshidaya" style="display:none;">
-              <select class="select select_small">
-                <option selected>全店舗グループ</option>
-                <option>エリア - 東京都</option>
-                <option>エリア - 京都府</option>
-                <option>エリア - 大阪府</option>
-                <option>SV - SV1</option>
-                <option>SV - SV2</option>
-              </select>
-            </div>
-            <div class="card__select ml-8" id="BrandMankichi" style="display:none;">
-              <select class="select select_small">
-                <option selected>全店舗グループ</option>
-                <option>エリア - 東京都</option>
-                <option>エリア - 京都府</option>
-                <option>エリア - 大阪府</option>
-                <option>SV - SV1</option>
-              </select>
-            </div>
-            <div class="card__select mr-8 ml-8">
-              <select class="select select_small">
-                <option selected>直近7日</option>
-                <option>直近30日</option>
-                <option>直近3ヶ月</option>
-                <option>直近1年</option>
-                <option>全期間</option>
-              </select>
-            </div>
-            <div class="card__select mobile-hide">
-              <select class="select select_small">
-                <option selected>スコア平均 ↓</option>
-                <option>スコア平均 ↑</option>
-                <option>提供スピード ↓</option>
-                <option>提供スピード ↑</option>
-                <option>サービス ↓</option>
-                <option>サービス ↑</option>
-                <option>商品 ↓</option>
-                <option>商品 ↑</option>
-                <option>清潔感 ↓</option>
-                <option>清潔感 ↑</option>
-                <option>再来店 ↓</option>
-                <option>再来店 ↑</option>
-              </select>
-            </div>
-          </div>
-          <div class="table-responsive">
-            <div class="customer__inner">
-              <div class="customer__container">
-                <div class="customer__wrapper">
-                  <div class="customer__table">
-                    <div class="customer__row">
-                      <div class="customer__col" style="text-align:left !important">店舗名</div>
-                      <div class="customer__col">スコア平均</div>
-                      <div class="customer__col">提供スピード</div>
-                      <div class="customer__col">サービス</div>
-                      <div class="customer__col">商品</div>
-                      <div class="customer__col">清潔感</div>
-                      <div class="customer__col">再来店</div>
-                      <div class="customer__col">回答数</div>
-                      <div class="customer__col">NPS</div>
-                      <div class="customer__col">総合スコア</div>
-                    </div>
-                    <a class="customer__row" href="store.html">
-                      <div class="score__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description" style="text-align:left !important">
-                            <div class="customer__user">牛鍋 吉田屋 八丁堀店</div>
-                            <div class="customer__login">東京都の店舗</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-purple customer__purchase">91</div>
-                      </div>
-                      <div class="score__col score_text_s">89</div>
-                      <div class="score__col score_text_s">98</div>
-                      <div class="score__col score_text_s">92</div>
-                      <div class="score__col score_text_s">94</div>
-                      <div class="score__col score_text_s">92</div>
-                      <div class="score__col">16</div>
-                      <div class="score__col">
-                        <div class="status-orange customer__purchase">8.2</div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-yellow customer__purchase">138</div>
-                      </div>
-                    </a>
-
-                    <a class="customer__row" href="store.html">
-                      <div class="score__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description" style="text-align:left !important">
-                            <div class="customer__user">牛鍋 吉田屋 青山店</div>
-                            <div class="customer__login">東京都の店舗</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-purple customer__purchase">91</div>
-                      </div>
-                      <div class="score__col score_text_s">89</div>
-                      <div class="score__col score_text_s">91</div>
-                      <div class="score__col score_text_s">91</div>
-                      <div class="score__col score_text_s">94</div>
-                      <div class="score__col score_text_s">91</div>
-                      <div class="score__col">39</div>
-                      <div class="score__col">
-                        <div class="status-orange customer__purchase">8.9</div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-yellow customer__purchase">119</div>
-                      </div>
-                    </a>
-                    <a class="customer__row" href="store.html">
-                      <div class="score__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description" style="text-align:left !important">
-                            <div class="customer__user">牛鍋 吉田屋 池袋店</div>
-                            <div class="customer__login">東京都の店舗</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-purple customer__purchase">89</div>
-                      </div>
-                      <div class="score__col score_text_s">88</div>
-                      <div class="score__col score_text_s">88</div>
-                      <div class="score__col score_text_s">89</div>
-                      <div class="score__col score_text_s">92</div>
-                      <div class="score__col score_text_s">90</div>
-                      <div class="score__col">23</div>
-                      <div class="score__col">
-                        <div class="status-orange customer__purchase">7.6</div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-yellow customer__purchase">107</div>
-                      </div>
-                    </a>
-                    <a class="customer__row" href="store.html">
-                      <div class="score__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
-                          <div class="customer__description" style="text-align:left !important">
-                            <div class="customer__user">万吉スープカレー 心斎橋店</div>
-                            <div class="customer__login">大阪府の店舗</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-purple customer__purchase">91</div>
-                      </div>
-                      <div class="score__col score_text_s">87</div>
-                      <div class="score__col score_text_s">91</div>
-                      <div class="score__col score_text_s">92</div>
-                      <div class="score__col score_text_s">94</div>
-                      <div class="score__col score_text_s">92</div>
-                      <div class="score__col">12</div>
-                      <div class="score__col">
-                        <div class="status-orange customer__purchase">9.2</div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-yellow customer__purchase">83</div>
-                      </div>
-                    </a>
-                    <a class="customer__row" href="store.html">
-                      <div class="score__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description" style="text-align:left !important">
-                            <div class="customer__user">牛鍋 吉田屋 丸の内店</div>
-                            <div class="customer__login">東京都の店舗</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-purple customer__purchase">89</div>
-                      </div>
-                      <div class="score__col score_text_s">83</div>
-                      <div class="score__col score_text_s">88</div>
-                      <div class="score__col score_text_s">90</div>
-                      <div class="score__col score_text_s">90</div>
-                      <div class="score__col score_text_s">91</div>
-                      <div class="score__col">29</div>
-                      <div class="score__col">
-                        <div class="status-orange customer__purchase">6.9</div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-yellow customer__purchase">131</div>
-                      </div>
-                    </a>
-                    <a class="customer__row" href="store.html">
-                      <div class="score__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
-                          <div class="customer__description" style="text-align:left !important">
-                            <div class="customer__user">万吉スープカレー 梅田店</div>
-                            <div class="customer__login">大阪府の店舗</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-purple customer__purchase">92</div>
-                      </div>
-                      <div class="score__col score_text_s">91</div>
-                      <div class="score__col score_text_s">90</div>
-                      <div class="score__col score_text_s">92</div>
-                      <div class="score__col score_text_s">94</div>
-                      <div class="score__col score_text_s">93</div>
-                      <div class="score__col">16</div>
-                      <div class="score__col">
-                        <div class="status-orange customer__purchase">8.2</div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-yellow customer__purchase">138</div>
-                      </div>
-                    </a>
-
-                    <a class="customer__row" href="store.html">
-                      <div class="score__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description" style="text-align:left !important">
-                            <div class="customer__user">牛鍋 吉田屋 代々木店</div>
-                            <div class="customer__login">東京都の店舗</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-purple customer__purchase">96</div>
-                      </div>
-                      <div class="score__col score_text_s">94</div>
-                      <div class="score__col score_text_s">95</div>
-                      <div class="score__col score_text_s">96</div>
-                      <div class="score__col score_text_s">97</div>
-                      <div class="score__col score_text_s">97</div>
-                      <div class="score__col">39</div>
-                      <div class="score__col">
-                        <div class="status-orange customer__purchase">8.9</div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-yellow customer__purchase">119</div>
-                      </div>
-                    </a>
-
-                    <a class="customer__row" href="store.html">
-                      <div class="score__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/mankichi.jpg" alt="万吉スープカレー"></div>
-                          <div class="customer__description" style="text-align:left !important">
-                            <div class="customer__user">万吉スープカレー 京都駅前店</div>
-                            <div class="customer__login">京都府の店舗</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-purple customer__purchase">91</div>
-                      </div>
-                      <div class="score__col score_text_s">89</div>
-                      <div class="score__col score_text_s">98</div>
-                      <div class="score__col score_text_s">92</div>
-                      <div class="score__col score_text_s">94</div>
-                      <div class="score__col score_text_s">92</div>
-                      <div class="score__col">23</div>
-                      <div class="score__col">
-                        <div class="status-orange customer__purchase">7.6</div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-yellow customer__purchase">107</div>
-                      </div>
-                    </a>
-
-                    <a class="customer__row" href="store.html">
-                      <div class="score__col">
-                        <div class="customer__item">
-                          <div class="customer__avatar"><img src="img/content/yoshidaya.jpg" alt="牛鍋 吉田屋"></div>
-                          <div class="customer__description" style="text-align:left !important">
-                            <div class="customer__user">牛鍋 吉田屋 北新地店</div>
-                            <div class="customer__login">大阪府の店舗</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-purple customer__purchase">92</div>
-                      </div>
-                      <div class="score__col score_text_s">90</div>
-                      <div class="score__col score_text_s">90</div>
-                      <div class="score__col score_text_s">93</div>
-                      <div class="score__col score_text_s">94</div>
-                      <div class="score__col score_text_s">91</div>
-                      <div class="score__col">12</div>
-                      <div class="score__col">
-                        <div class="status-orange customer__purchase">9.2</div>
-                      </div>
-                      <div class="score__col">
-                        <div class="status-yellow customer__purchase">83</div>
-                      </div>
-                    </a>
-
-                  </div>
-                </div>
+        <div class="products card">
+            <div class="products__head">
+              <div class="title-purple products__title">カスタムアンケート一覧</div>
+              <div class="card__select">
+                <select class="select select_small">
+                  <option selected>全ブランド</option>
+                  <option>牛鍋 吉田屋</option>
+                  <option>万吉スープカレー</option>
+                </select>
               </div>
+              <div class="card__select ml-8">
+                <select class="select select_small">
+                  <option selected>店舗グループ</option>
+                  <option>Aグループ</option>
+                  <option>Bグループ</option>
+                </select>
+              </div>
+              <div class="card__select ml-8 mr-8">
+                <select class="select select_small">
+                  <option selected>ステータス</option>
+                  <option>アクティブ</option>
+                  <option>停止中</option>
+                </select>
+              </div>
+              <a class="button-stroke button-small card__button ml-8" data-popup=".js-popup-addtemplate">
+               <svg class="icon icon-add">
+                <use xlink:href="#icon-add"></use>
+                </svg><span>新規追加</span>
+              </a>
             </div>
-          </div>
-        </div>
-        <div class="notification js-tabs-item">
-          <div class="notification__row">
-            <div class="notification__col">
-              <div class="card">
-                <div class="settings__anchor" id="q1" data-value="q1"></div>
-                <div class="card__head">
-                  <div class="title-purple card__title">どこでRecopoを知りましたか？</div>
-                </div>
-                <div class="card__chart card__chart_optionalreview">
-                  <div id="recopo-source"></div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="settings__anchor" id="q2" data-value="q2"></div>
-                <div class="card__head">
-                  <div class="title-purple card__title">Recopoをより良くするためのご意見</div>
-                </div>
-                <div class="optionalreview__list">
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "何が目的なのか明確でない"
+            <div class="products__container">
+              <div class="products__wrapper">
+                <div class="products__table">
+                  <div class="products__row">
+                    <div class="products__col">アンケート名</div>
+                    <div class="products__col">ステータス</div>
+                    <div class="products__col">最終更新日</div>
+                  </div>
+                  <div class="list__row">
+                    <div class="customer__col">
+                      <a class="customer__item" href="review-form-pre.html" target="_blank">
+                        <div class="type__icon">
+                          <svg class="icon icon-layers">
+                            <use xlink:href="#icon-multiselect"></use>
+                          </svg>
+                        </div>
+                        接客クオリティ調査
+                      </a>
+                    </div>
+                    <div class="list__col">
+                      <div class="status-green">アクティブ</div>
+                    </div>
+                    <div class="list__col">
+                      <div class="schedule__date text-gray">2023/3/9 18:36</div>
+                      <div class="action__control">
+                        <button class="action__button" onclick="window.open('review-form-pre.html')">
+                          <svg class="icon icon-message">
+                            <use xlink:href="#icon-show"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-edit"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-copy"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" data-popup=".js-popup-delete">
+                          <svg class="icon icon-trash">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
                       </div>
                     </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "店舗にちゃんと反映させてください"
+                  </div> 
+                  <div class="list__row">
+                    <div class="customer__col">
+                      <a class="customer__item" href="review-form-pre.html" target="_blank">
+                        <div class="type__icon">
+                          <svg class="icon icon-layers">
+                            <use xlink:href="#icon-multiselect"></use>
+                          </svg>
+                        </div>
+                        立地調査
+                      </a>
+                    </div>
+                    <div class="list__col">
+                      <div class="status-red">停止中</div>
+                    </div>
+                    <div class="list__col">
+                      <div class="schedule__date text-gray">2023/3/9 18:36</div>
+                      <div class="action__control">
+                        <button class="action__button" onclick="window.open('review-form-pre.html')">
+                          <svg class="icon icon-message">
+                            <use xlink:href="#icon-show"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-edit"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-copy"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" data-popup=".js-popup-delete">
+                          <svg class="icon icon-trash">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
                       </div>
                     </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "皆んなのためのみんなの銀行をやってほしいです"
+                  </div> 
+                  <div class="list__row">
+                    <div class="customer__col">
+                      <a class="customer__item" href="review-form-pre.html" target="_blank">
+                        <div class="type__icon">
+                          <svg class="icon icon-layers">
+                            <use xlink:href="#icon-multiselect"></use>
+                          </svg>
+                        </div>
+                        価格調査
+                      </a>
+                    </div>
+                    <div class="list__col">
+                      <div class="status-green">アクティブ</div>
+                    </div>
+                    <div class="list__col">
+                      <div class="schedule__date text-gray">2023/3/9 18:36</div>
+                      <div class="action__control">
+                        <button class="action__button" onclick="window.open('review-form-pre.html')">
+                          <svg class="icon icon-message">
+                            <use xlink:href="#icon-show"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-edit"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-copy"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" data-popup=".js-popup-delete">
+                          <svg class="icon icon-trash">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
                       </div>
                     </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "無料にすべき!かと思いきや有料でした"
+                  </div> 
+                  <div class="list__row">
+                    <div class="customer__col">
+                      <a class="customer__item" href="review-form-pre.html" target="_blank">
+                        <div class="type__icon">
+                          <svg class="icon icon-layers">
+                            <use xlink:href="#icon-multiselect"></use>
+                          </svg>
+                        </div>
+                        清潔度調査
+                      </a>
+                    </div>
+                    <div class="list__col">
+                      <div class="status-green">アクティブ</div>
+                    </div>
+                    <div class="list__col">
+                      <div class="schedule__date text-gray">2023/3/9 18:36</div>
+                      <div class="action__control">
+                        <button class="action__button" onclick="window.open('review-form-pre.html')">
+                          <svg class="icon icon-message">
+                            <use xlink:href="#icon-show"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-edit"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-copy"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" data-popup=".js-popup-delete">
+                          <svg class="icon icon-trash">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
                       </div>
                     </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "必須項目が多くて回答しているうちにウキウキしてきました"
+                  </div> 
+                  <div class="list__row">
+                    <div class="customer__col">
+                      <a class="customer__item" href="review-form-pre.html" target="_blank">
+                        <div class="type__icon">
+                          <svg class="icon icon-layers">
+                            <use xlink:href="#icon-multiselect"></use>
+                          </svg>
+                        </div>
+                        提供スピード調査
+                      </a>
+                    </div>
+                    <div class="list__col">
+                      <div class="status-red">停止中</div>
+                    </div>
+                    <div class="list__col">
+                      <div class="schedule__date text-gray">2023/3/9 18:36</div>
+                      <div class="action__control">
+                        <button class="action__button" onclick="window.open('review-form-pre.html')">
+                          <svg class="icon icon-message">
+                            <use xlink:href="#icon-show"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-edit"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-copy"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" data-popup=".js-popup-delete">
+                          <svg class="icon icon-trash">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
                       </div>
                     </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "いきなりステーキはいきなり融通が効くと嬉しいです"
+                  </div> 
+                  <div class="list__row">
+                    <div class="customer__col">
+                      <a class="customer__item" href="review-form-pre.html" target="_blank">
+                        <div class="type__icon">
+                          <svg class="icon icon-layers">
+                            <use xlink:href="#icon-multiselect"></use>
+                          </svg>
+                        </div>
+                        料理クオリティ調査
+                      </a>
+                    </div>
+                    <div class="list__col">
+                      <div class="status-green">アクティブ</div>
+                    </div>
+                    <div class="list__col">
+                      <div class="schedule__date text-gray">2023/3/9 18:36</div>
+                      <div class="action__control">
+                        <button class="action__button" onclick="window.open('review-form-pre.html')">
+                          <svg class="icon icon-message">
+                            <use xlink:href="#icon-show"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-edit"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" onclick="location.href='template-edit.html'">
+                          <svg class="icon icon-edit">
+                            <use xlink:href="#icon-copy"></use>
+                          </svg>
+                        </button>
+                        <button class="action__button" data-popup=".js-popup-delete">
+                          <svg class="icon icon-trash">
+                            <use xlink:href="#icon-trash"></use>
+                          </svg>
+                        </button>
                       </div>
                     </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "世間にではなく、思い切った意見や愉快な仲間たちのことを伝えられるのでがんばることが凄く役に立っています"
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="settings__anchor" id="q3" data-value="q3"></div>
-                <div class="card__head">
-                  <div class="title-purple card__title">どこから店のことを知りましたか？</div>
-                </div>
-                <div class="card__chart card__chart_optionalreview">
-                  <div id="shop-source"></div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="settings__anchor" id="q4" data-value="q4"></div>
-                <div class="card__head">
-                  <div class="title-purple card__title">笑顔が素敵だった店員さんの名前を教えてください</div>
-                </div>
-                <div class="optionalreview__list">
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "カツオさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "ワカメさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "イクラさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "イササカ先生"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "マスオさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "アナゴさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "タイコさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "ハナザワさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "フネさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "ナミヘイさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "タラオさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "タマさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "ノリスケさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "ウミヘイさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "ジンロクさん"
-                      </div>
-                    </div>
-                  </div>
-                  <div class="optionalreview__item">
-                    <div class="optionalreview__details">
-                      <div class="notification__comment mb-8">
-                        "サブロウさん"
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="notification__col">
-              <div class="card">
-                <div class="notification__filters">
-                  <div class="card__select mb-8">
-                    <select class="select select_small" id="brand2" onchange="viewChange();">
-                    <option selected value="All2">全ブランド</option>
-                    <option value="Yoshidaya2">牛鍋 吉田屋</option>
-                    <option value="Mankichi2">万吉スープカレー</option>
-                    </select>
-                  </div>
-                  <div class="card__select mb-8" id="BrandYoshidaya2" style="display:none;">
-                    <select class="select select_small">
-                    <option selected>全店舗グループ</option>
-                    <option>エリア - 東京都</option>
-                    <option>エリア - 京都府</option>
-                    <option>エリア - 大阪府</option>
-                    <option>SV - SV1</option>
-                    <option>SV - SV2</option>
-                    </select>
-                  </div>
-                  <div class="card__select mb-8" id="BrandMankichi2" style="display:none;">
-                    <select class="select select_small">
-                    <option selected>全店舗グループ</option>
-                    <option>エリア - 東京都</option>
-                    <option>エリア - 京都府</option>
-                    <option>エリア - 大阪府</option>
-                    <option>SV - SV1</option>
-                    </select>
-                  </div>
-                  <div class="card__select">
-                    <select class="select select_small">
-                    <option selected>直近7日</option>
-                    <option>直近30日</option>
-                    <option>直近3ヶ月</option>
-                    <option>直近1年</option>
-                    <option>全期間</option>
-                    </select>
-                  </div>
-                  <button class="button-small card__button button-stroke ml-auto mobile-hide tablet-hide w-100 mt-16">
-                    <svg class="icon icon-download">
-                    <use xlink:href="#icon-download"></use>
-                    </svg>
-                    <span>回答ダウンロード</span>
-                  </button>
-                </div>
-              </div>
-              <div class="card">
-                <div class="notification__filters">
-                  <div class="settings__menu">
-                    <a class="settings__link active" href="#q1">どこでRecopoを知りましたか？</a>
-                    <a class="settings__link" href="#q2">Recopoをより良くするためのご意見</a>
-                    <a class="settings__link" href="#q3">どこから店のことを知りましたか？</a>
-                    <a class="settings__link" href="#q4">笑顔が素敵だった店員さんの名前を教えてください</a>
-                  </div>
+                  </div> 
+                  
                 </div>
               </div>
             </div>
@@ -1098,41 +802,145 @@
         </div>
       </div>
     </div>
-    <div class="popup popup_success js-popup js-popup-addstore">
+    <div class="popup popup_schedule js-popup js-popup-delete">
+      <div class="popup__overlay js-popup-overlay"></div>
+      <div class="popup__wrap js-popup-wrap">
+        <div class="calendar js-calendar">
+          <div class="title-purple calendar__title">アンケートを削除</div>
+          <div class="calendar__note"><strong>アンケート:立地調査</strong> を削除してもよろしいですか？アンケートを削除すると、これまでに集計したアンケート回答内容やスコアも閲覧することができなくなります。
+          </div>
+          <div class="description__btns">
+            <button class="button-stroke description__button js-popup-close">キャンセル</button>
+            <button class="button-red description__button" onclick="location.href='template-list.html'"><span>削除する</span>
+              <svg class="icon icon-trash">
+                <use xlink:href="#icon-trash"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button class="popup__close js-popup-close">
+          <svg class="icon icon-close">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="popup popup_brands js-popup js-popup-addtemplate">
       <div class="popup__overlay js-popup-overlay"></div>
       <div class="popup__wrap js-popup-wrap">
         <div class="description">
-          <div class="title-yellow description__title">店舗の追加</div>
-          <div class="description__row">
-            <div class="modal__col">
-              <div class="field">
-                <div class="field__label">店舗名
-                  <div class="tooltip required" title="店舗名（ブランド名を除く）">
-                    <svg class="icon icon-info">
-                      <use xlink:href="#icon-info"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="field__wrap">
-                  <input class="field__input" type="text" name="title" placeholder="店舗名" value="" required>
+          <div class="title-purple description__title">カスタムアンケートの追加</div>
+          <div class="settings__row">
+            
+            <div class="field">
+              <div class="field__label">リサーチ目的
+                <div class="tooltip required" title="アンケートリサーチの実施目的を選んでください">
+                  <svg class="icon icon-info">
+                    <use xlink:href="#icon-info"></use>
+                  </svg>
                 </div>
               </div>
-              <div class="field">
-                <div class="field__label">ブランド
-                </div>
-                <div class="field__wrap">
-                  <select class="select">
-                    <option>選択してください</option>
-                    <option>牛鍋 吉田屋</option>
-                    <option>万吉スープカレー</option>
-                  </select>
+              <div class="field__wrap">
+                <select class="select" required>
+                  <option selected disabled>選択してください</option>
+                  <option>接客クオリティ</option>
+                  <option>立地利便性</option>
+                  <option>価格バランス</option>
+                  <option>清潔度</option>
+                  <option>提供スピード</option>
+                  <option>料理クオリティ</option>
+                  <option>従業員評価</option>
+                </select>
+              </div>
+            </div>  
+            <div class="field">
+              <div class="field__label">アンケート名
+                <div class="tooltip required" title="アンケートの名前です">
+                  <svg class="icon icon-info">
+                    <use xlink:href="#icon-info"></use>
+                  </svg>
                 </div>
               </div>
-              <div class="description__btns">
-                <button class="button-stroke description__button">キャンセル</button>
-                <button class="button description__button">作成</button>
+              <div class="field__wrap">
+                <input class="field__input" type="text" name="title" placeholder="アンケート名" value="" required>
               </div>
             </div>
+          </div>
+          <div class="settings__row">
+            <div class="field">
+              <div class="field__label">設定単位
+                <div class="tooltip required" title="カスタムアンケートの設定単位を選んでください">
+                  <svg class="icon icon-info">
+                    <use xlink:href="#icon-info"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="field__wrap">
+                <select class="select" id="unit" onchange="viewChange();" required>
+                  <option selected disabled>選択してください</option>
+                  <option value="brand">ブランド</option>
+                  <option value="group">店舗グループ</option>
+                  <option value="store">店舗</option>
+                </select>
+              </div>
+            </div>
+            <div class="field" id="BrandList" style="display:none;">
+              <div class="field__label">設定するブランド
+                <div class="tooltip required" title="このアンケートを設定するブランドを選択してください。ブランドは複数指定できます。">
+                  <svg class="icon icon-info">
+                    <use xlink:href="#icon-info"></use>
+                  </svg>
+                </div>
+              </div>            
+              <div class="field__wrap">
+                <select class="select brand-select-multiple" multiple="multiple">
+                  <option>牛鍋 吉田屋</option>
+                  <option>万吉スープカレー</option>
+                </select>
+              </div>  
+            </div>
+            <div class="field" id="GroupList" style="display:none;">
+              <div class="field__label">設定する店舗グループ
+                <div class="tooltip required" title="このアンケートを設定する店舗グループを選択してください。店舗グループは複数指定できます。">
+                  <svg class="icon icon-info">
+                    <use xlink:href="#icon-info"></use>
+                  </svg>
+                </div>
+              </div>            
+              <div class="field__wrap">
+                <select class="select group-select-multiple" multiple="multiple">
+                  <option>牛鍋 吉田屋 - SV1</option>
+                  <option>牛鍋 吉田屋 - SV2</option>
+                  <option>万吉スープカレー - SV1</option>
+                  <option>万吉スープカレー - SV4</option>
+                </select>
+              </div>  
+            </div>
+            <div class="field" id="StoreList" style="display:none;">
+              <div class="field__label">設定する店舗
+                <div class="tooltip required" title="このアンケートを設定する店舗を選択してください。店舗は複数指定できます。">
+                  <svg class="icon icon-info">
+                    <use xlink:href="#icon-info"></use>
+                  </svg>
+                </div>
+              </div>            
+              <div class="field__wrap">
+                <select class="select store-select-multiple" multiple="multiple">
+                  <option>牛鍋 吉田屋 八丁堀店</option>
+                  <option>牛鍋 吉田屋 青山店</option>
+                  <option>牛鍋 吉田屋 池袋店</option>
+                  <option>牛鍋 吉田屋 丸の内店</option>
+                  <option>牛鍋 吉田屋 代々木店</option>
+                  <option>牛鍋 吉田屋 北新地店</option>
+                  <option>万吉スープカレー 京都駅前店</option>
+                  <option>万吉スープカレー 梅田店</option>
+                </select>
+              </div>  
+            </div>
+          </div>
+          <div class="description__btns">
+            <button class="button-stroke description__button js-popup-close">キャンセル</button>
+            <button class="button description__button" onclick="location.href='template-edit.html'">作成</button>
           </div>
         </div>
         <button class="popup__close js-popup-close">
@@ -1143,6 +951,7 @@
       </div>
     </div>
   </div>
+
   <!-- scripts-->
   <script src="js/lib/jquery.min.js"></script>
   <script src="js/lib/slick.min.js"></script>
@@ -1160,41 +969,47 @@
   <script src="js/demo.js"></script>
   <script src="js/app.js"></script>
   <script src="js/loading.js"></script>
+  <script src="js/lib/formrepeater.bundle.js"></script>
+  <script src="js/select2.full.js"></script>
   <script>
+    // Change select options
     function viewChange() {
-      if (document.getElementById('brand')) {
-        id = document.getElementById('brand').value;
-        if (id == 'Yoshidaya') {
-          document.getElementById('BrandYoshidaya').style.display = "";
-          document.getElementById('BrandMankichi').style.display = "none";
-        } else if (id == 'Mankichi') {
-          document.getElementById('BrandYoshidaya').style.display = "none";
-          document.getElementById('BrandMankichi').style.display = "";
-        } else if (id == 'All') {
-          document.getElementById('BrandYoshidaya').style.display = "none";
-          document.getElementById('BrandMankichi').style.display = "none";
+      if (document.getElementById('unit')) {
+        id = document.getElementById('unit').value;
+        if (id == 'brand') {
+          document.getElementById('BrandList').style.display = "";
+          document.getElementById('GroupList').style.display = "none";
+          document.getElementById('StoreList').style.display = "none";
+        } else if (id == 'group') {
+          document.getElementById('BrandList').style.display = "none";
+          document.getElementById('GroupList').style.display = "";
+          document.getElementById('StoreList').style.display = "none";
+        } else if (id == 'store') {
+        document.getElementById('BrandList').style.display = "none";
+        document.getElementById('GroupList').style.display = "none";
+        document.getElementById('StoreList').style.display = "";
         }
       }
-      window.onload = viewChange;
-    },
-    function viewChange() {
-      if (document.getElementById('brand2')) {
-        id = document.getElementById('brand2').value;
-        if (id == 'Yoshidaya2') {
-          document.getElementById('BrandYoshidaya2').style.display = "";
-          document.getElementById('BrandMankichi2').style.display = "none";
-        } else if (id == 'Mankichi2') {
-          document.getElementById('BrandYoshidaya2').style.display = "none";
-          document.getElementById('BrandMankichi2').style.display = "";
-        } else if (id == 'All2') {
-          document.getElementById('BrandYoshidaya2').style.display = "none";
-          document.getElementById('BrandMankichi2').style.display = "none";
-        }
-      }
-    
       window.onload = viewChange;
     }
+    // Multi-select boxes (pillbox)
+    $('.brand-select-multiple').select2( {
+       multiple: true,
+       placeholder: "設定するブランドを選択してください",
+       allowClear: true,
+    });
+    $('.group-select-multiple').select2( {
+       multiple: true,
+       placeholder: "設定する店舗グループを選択してください",
+       allowClear: true,
+    });
+    $('.store-select-multiple').select2( {
+       multiple: true,
+       placeholder: "設定する店舗を選択してください",
+       allowClear: true,
+    });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <!-- svg sprite-->
   <div style="display: none">
     <svg width="0" height="0">
@@ -1477,12 +1292,12 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 8V5.33333C10.6667 4.22876 9.77128 3.33333 8.66671 3.33333H7.33337C6.2288 3.33333 5.33337 4.22876 5.33337 5.33333V6.66667H3.33337C2.2288 6.66667 1.33337 7.5621 1.33337 8.66667V12C1.33337 12.3682 1.63185 12.6667 2.00004 12.6667H14C14.3682 12.6667 14.6667 12.3682 14.6667 12V10C14.6667 8.89543 13.7713 8 12.6667 8H10.6667ZM8.66671 4.66667H7.33337C6.96518 4.66667 6.66671 4.96514 6.66671 5.33333V11.3333H9.33337V5.33333C9.33337 4.96514 9.0349 4.66667 8.66671 4.66667ZM10.6667 9.33333V11.3333H13.3334V10C13.3334 9.63181 13.0349 9.33333 12.6667 9.33333H10.6667ZM3.33337 8H5.33337V11.3333H2.66671V8.66667C2.66671 8.29848 2.96518 8 3.33337 8Z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-flag">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33333 1.99999C3.33333 1.63181 3.03486 1.33333 2.66667 1.33333C2.29848 1.33333 2 1.63181 2 1.99999V14C2 14.3682 2.29848 14.6667 2.66667 14.6667C3.03486 14.6667 3.33333 14.3682 3.33333 14V10H6.68422C7.11415 10 7.54127 10.0693 7.94913 10.2053L8.71753 10.4614C9.1254 10.5974 9.55252 10.6667 9.98244 10.6667H12C13.1046 10.6667 14 9.77123 14 8.66666V4.66666C14 3.56209 13.1046 2.66666 12 2.66666H9.98244C9.55252 2.66666 9.1254 2.59735 8.71753 2.46139L7.94913 2.20526C7.54127 2.06931 7.11415 1.99999 6.68422 1.99999H3.33333ZM3.33333 3.33333V8.66666H6.68422C7.25746 8.66666 7.82695 8.75908 8.37077 8.94035L9.13917 9.19648C9.41108 9.28712 9.69583 9.33333 9.98244 9.33333H12C12.3682 9.33333 12.6667 9.03485 12.6667 8.66666V4.66666C12.6667 4.29847 12.3682 3.99999 12 3.99999H9.98244C9.40921 3.99999 8.83972 3.90758 8.2959 3.72631L7.5275 3.47017C7.25559 3.37954 6.97084 3.33333 6.68422 3.33333H3.33333Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33333 1.99999C3.33333 1.63181 3.03486 1.33333 2.66667 1.33333C2.29848 1.33333 2 1.63181 2 1.99999V14C2 14.3682 2.29848 14.6667 2.66667 14.6667C3.03486 14.6667 3.33333 14.3682 3.33333 14V10H6.68422C7.11415 10 7.54127 10.0693 7.94913 10.2053L8.71753 10.4614C9.1254 10.5974 9.55252 10.6667 9.98244 10.6667H12C13.1046 10.6667 14 9.77123 14 8.66666V4.66666C14 3.56209 13.1046 2.66666 12 2.66666H9.98244C9.55252 2.66666 9.1254 2.59735 8.71753 2.46139L7.94913 2.20526C7.54127 2.06931 7.11415 1.99999 6.68422 1.99999H3.33333ZM3.33333 3.33333V8.66666H6.68422C7.25746 8.66666 7.82695 8.75908 8.37077 8.94035L9.13917 9.19648C9.41108 9.28712 9.69583 9.33333 9.98244 9.33333H12C12.3682 9.33333 12.6667 9.03485 12.6667 8.66666V4.66666C12.6667 4.29847 12.3682 3.99999 12 3.99999H9.98244C9.40921 3.99999 8.83972 3.90758 8.2959 3.72631L7.5275 3.47017C7.25559 3.37954 6.97084 3.33333 6.68422 3.33333H3.33333Z"/>
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-layers">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68343 3.45791C8.24191 3.29736 7.75797 3.29736 7.31646 3.45791L2.61739 5.16666L7.31646 6.87542C7.75797 7.03597 8.24191 7.03597 8.68343 6.87542L13.3825 5.16666L8.68343 3.45791ZM6.8608 2.20485C7.59666 1.93727 8.40323 1.93727 9.13909 2.20485L13.8382 3.91361C15.0084 4.33915 15.0084 5.99418 13.8382 6.41972L9.13909 8.12847C8.40323 8.39606 7.59666 8.39606 6.8608 8.12847L2.16173 6.41972C0.991495 5.99418 0.991503 4.33914 2.16173 3.91361L6.8608 2.20485Z" />
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 8.26332C1.49518 7.9164 1.8764 7.73517 2.22332 7.85851L7.5533 9.75362C7.84223 9.85635 8.15773 9.85635 8.44666 9.75362L13.7766 7.85851C14.1236 7.73517 14.5048 7.9164 14.6281 8.26332C14.7515 8.61023 14.5702 8.99145 14.2233 9.1148L8.89334 11.0099C8.31548 11.2154 7.68447 11.2154 7.10662 11.0099L1.77664 9.1148C1.42972 8.99145 1.24849 8.61023 1.37184 8.26332Z" />
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 11.0967C1.49518 10.7497 1.8764 10.5685 2.22332 10.6919L7.5533 12.587C7.84223 12.6897 8.15773 12.6897 8.44666 12.587L13.7766 10.6919C14.1236 10.5685 14.5048 10.7497 14.6281 11.0967C14.7515 11.4436 14.5702 11.8248 14.2233 11.9481L8.89334 13.8432C8.31548 14.0487 7.68447 14.0487 7.10662 13.8432L1.77664 11.9481C1.42972 11.8248 1.24849 11.4436 1.37184 11.0967Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68343 3.45791C8.24191 3.29736 7.75797 3.29736 7.31646 3.45791L2.61739 5.16666L7.31646 6.87542C7.75797 7.03597 8.24191 7.03597 8.68343 6.87542L13.3825 5.16666L8.68343 3.45791ZM6.8608 2.20485C7.59666 1.93727 8.40323 1.93727 9.13909 2.20485L13.8382 3.91361C15.0084 4.33915 15.0084 5.99418 13.8382 6.41972L9.13909 8.12847C8.40323 8.39606 7.59666 8.39606 6.8608 8.12847L2.16173 6.41972C0.991495 5.99418 0.991503 4.33914 2.16173 3.91361L6.8608 2.20485Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 8.26332C1.49518 7.9164 1.8764 7.73517 2.22332 7.85851L7.5533 9.75362C7.84223 9.85635 8.15773 9.85635 8.44666 9.75362L13.7766 7.85851C14.1236 7.73517 14.5048 7.9164 14.6281 8.26332C14.7515 8.61023 14.5702 8.99145 14.2233 9.1148L8.89334 11.0099C8.31548 11.2154 7.68447 11.2154 7.10662 11.0099L1.77664 9.1148C1.42972 8.99145 1.24849 8.61023 1.37184 8.26332Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.37184 11.0967C1.49518 10.7497 1.8764 10.5685 2.22332 10.6919L7.5533 12.587C7.84223 12.6897 8.15773 12.6897 8.44666 12.587L13.7766 10.6919C14.1236 10.5685 14.5048 10.7497 14.6281 11.0967C14.7515 11.4436 14.5702 11.8248 14.2233 11.9481L8.89334 13.8432C8.31548 14.0487 7.68447 14.0487 7.10662 13.8432L1.77664 11.9481C1.42972 11.8248 1.24849 11.4436 1.37184 11.0967Z" />
       </symbol>
 
     </svg>
