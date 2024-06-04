@@ -21363,6 +21363,14 @@ body.dark .entry__top {
   color: #6F767E;
 }
 
+.review .field__label_column {
+  font-size: 12px;
+  line-height: 1.3333;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #6F767E;
+}
+
 .entry__note {
   margin-top: 32px;
   font-size: 14px;
@@ -23977,4 +23985,23 @@ p {
   .mobile-w-100 {
     width: 100%
   }
+}
+
+.icon_good {
+  width: 24px;
+  height: 24px;
+  fill: var(--recopo-green);
+}
+
+.icon_bad {
+  width: 24px;
+  height: 24px;
+  fill: var(--recopo-pink);
+}
+
+.column__review {
+  vertical-align: middle;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
